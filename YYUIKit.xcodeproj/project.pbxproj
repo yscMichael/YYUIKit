@@ -15,6 +15,7 @@
 		119695C0213B9B60006035D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 119695BF213B9B60006035D4 /* main.m */; };
 		119695CA213B9B61006035D4 /* YYUIKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 119695C9213B9B61006035D4 /* YYUIKitTests.m */; };
 		119695D5213B9B61006035D4 /* YYUIKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 119695D4213B9B61006035D4 /* YYUIKitUITests.m */; };
+		BD21611BB0A8C6302FA6B37A /* libPods-YYUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA75409AD8367526DBF9318 /* libPods-YYUIKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		119695D0213B9B61006035D4 /* YYUIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYUIKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		119695D4213B9B61006035D4 /* YYUIKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYUIKitUITests.m; sourceTree = "<group>"; };
 		119695D6213B9B61006035D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		455DF9753812959CA6F12E3C /* Pods-YYUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYUIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YYUIKit/Pods-YYUIKit.debug.xcconfig"; sourceTree = "<group>"; };
+		9EA75409AD8367526DBF9318 /* libPods-YYUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YYUIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3D6D655FED25935A1370CAC /* Pods-YYUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYUIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-YYUIKit/Pods-YYUIKit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD21611BB0A8C6302FA6B37A /* libPods-YYUIKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 				119695C8213B9B60006035D4 /* YYUIKitTests */,
 				119695D3213B9B61006035D4 /* YYUIKitUITests */,
 				119695AE213B9B5F006035D4 /* Products */,
+				7E38A2554EAB369405CFD9DE /* Pods */,
+				6ED263F249265E0980718AD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +139,23 @@
 			path = YYUIKitUITests;
 			sourceTree = "<group>";
 		};
+		6ED263F249265E0980718AD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EA75409AD8367526DBF9318 /* libPods-YYUIKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E38A2554EAB369405CFD9DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				455DF9753812959CA6F12E3C /* Pods-YYUIKit.debug.xcconfig */,
+				D3D6D655FED25935A1370CAC /* Pods-YYUIKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +163,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 119695D9213B9B61006035D4 /* Build configuration list for PBXNativeTarget "YYUIKit" */;
 			buildPhases = (
+				6BB345AC5F801121CA8EAE98 /* [CP] Check Pods Manifest.lock */,
 				119695A9213B9B5F006035D4 /* Sources */,
 				119695AA213B9B5F006035D4 /* Frameworks */,
 				119695AB213B9B5F006035D4 /* Resources */,
@@ -256,6 +281,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6BB345AC5F801121CA8EAE98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YYUIKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		119695A9213B9B5F006035D4 /* Sources */ = {
@@ -431,15 +477,13 @@
 		};
 		119695DA213B9B61006035D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 455DF9753812959CA6F12E3C /* Pods-YYUIKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59PVTAC458;
 				INFOPLIST_FILE = YYUIKit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winwayworld.YYUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,15 +492,13 @@
 		};
 		119695DB213B9B61006035D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3D6D655FED25935A1370CAC /* Pods-YYUIKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59PVTAC458;
 				INFOPLIST_FILE = YYUIKit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winwayworld.YYUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -470,11 +512,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59PVTAC458;
 				INFOPLIST_FILE = YYUIKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winwayworld.YYUIKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -489,11 +527,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59PVTAC458;
 				INFOPLIST_FILE = YYUIKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winwayworld.YYUIKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -507,11 +541,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59PVTAC458;
 				INFOPLIST_FILE = YYUIKitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winwayworld.YYUIKitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -525,11 +555,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59PVTAC458;
 				INFOPLIST_FILE = YYUIKitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winwayworld.YYUIKitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
