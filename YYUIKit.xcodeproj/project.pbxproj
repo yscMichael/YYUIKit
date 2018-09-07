@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		119695B2213B9B5F006035D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 119695B1213B9B5F006035D4 /* AppDelegate.m */; };
+		119695B2213B9B5F006035D4 /* YYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 119695B1213B9B5F006035D4 /* YYAppDelegate.m */; };
 		119695B5213B9B5F006035D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 119695B4213B9B5F006035D4 /* ViewController.m */; };
 		119695B8213B9B5F006035D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119695B6213B9B5F006035D4 /* Main.storyboard */; };
 		119695BA213B9B60006035D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 119695B9213B9B60006035D4 /* Assets.xcassets */; };
@@ -37,8 +37,8 @@
 
 /* Begin PBXFileReference section */
 		119695AD213B9B5F006035D4 /* YYUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		119695B0213B9B5F006035D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		119695B1213B9B5F006035D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		119695B0213B9B5F006035D4 /* YYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYAppDelegate.h; sourceTree = "<group>"; };
+		119695B1213B9B5F006035D4 /* YYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYAppDelegate.m; sourceTree = "<group>"; };
 		119695B3213B9B5F006035D4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		119695B4213B9B5F006035D4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		119695B7213B9B5F006035D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,15 +108,10 @@
 		119695AF213B9B5F006035D4 /* YYUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				119695B0213B9B5F006035D4 /* AppDelegate.h */,
-				119695B1213B9B5F006035D4 /* AppDelegate.m */,
-				119695B3213B9B5F006035D4 /* ViewController.h */,
-				119695B4213B9B5F006035D4 /* ViewController.m */,
-				119695B6213B9B5F006035D4 /* Main.storyboard */,
-				119695B9213B9B60006035D4 /* Assets.xcassets */,
-				119695BB213B9B60006035D4 /* LaunchScreen.storyboard */,
-				119695BE213B9B60006035D4 /* Info.plist */,
-				119695BF213B9B60006035D4 /* main.m */,
+				11DA89C2213BA10700F57154 /* AppDelegate */,
+				11DA89C3213BA11500F57154 /* main */,
+				11DA89C5213BA39C00F57154 /* UICollectionView */,
+				11DA89C4213BA12000F57154 /* other */,
 			);
 			path = YYUIKit;
 			sourceTree = "<group>";
@@ -137,6 +132,43 @@
 				119695D6213B9B61006035D4 /* Info.plist */,
 			);
 			path = YYUIKitUITests;
+			sourceTree = "<group>";
+		};
+		11DA89C2213BA10700F57154 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				119695B0213B9B5F006035D4 /* YYAppDelegate.h */,
+				119695B1213B9B5F006035D4 /* YYAppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		11DA89C3213BA11500F57154 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				119695B3213B9B5F006035D4 /* ViewController.h */,
+				119695B4213B9B5F006035D4 /* ViewController.m */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		11DA89C4213BA12000F57154 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				119695BE213B9B60006035D4 /* Info.plist */,
+				119695BF213B9B60006035D4 /* main.m */,
+				119695B6213B9B5F006035D4 /* Main.storyboard */,
+				119695BB213B9B60006035D4 /* LaunchScreen.storyboard */,
+				119695B9213B9B60006035D4 /* Assets.xcassets */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		11DA89C5213BA39C00F57154 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UICollectionView;
 			sourceTree = "<group>";
 		};
 		6ED263F249265E0980718AD5 /* Frameworks */ = {
@@ -310,7 +342,7 @@
 			files = (
 				119695B5213B9B5F006035D4 /* ViewController.m in Sources */,
 				119695C0213B9B60006035D4 /* main.m in Sources */,
-				119695B2213B9B5F006035D4 /* AppDelegate.m in Sources */,
+				119695B2213B9B5F006035D4 /* YYAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,8 +514,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59PVTAC458;
-				INFOPLIST_FILE = YYUIKit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INFOPLIST_FILE = YYUIKit/other/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.winwayworld.YYUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -497,8 +532,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59PVTAC458;
-				INFOPLIST_FILE = YYUIKit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INFOPLIST_FILE = YYUIKit/other/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.winwayworld.YYUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -512,7 +550,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59PVTAC458;
 				INFOPLIST_FILE = YYUIKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.winwayworld.YYUIKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -527,7 +569,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59PVTAC458;
 				INFOPLIST_FILE = YYUIKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.winwayworld.YYUIKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -541,7 +587,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59PVTAC458;
 				INFOPLIST_FILE = YYUIKitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.winwayworld.YYUIKitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -555,7 +605,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59PVTAC458;
 				INFOPLIST_FILE = YYUIKitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.winwayworld.YYUIKitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
