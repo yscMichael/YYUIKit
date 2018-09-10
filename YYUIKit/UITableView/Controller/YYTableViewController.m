@@ -107,18 +107,6 @@
     NSArray *sourceArray = self.dataSoure[indexPath.section];
     YYDrugModel *model = (YYDrugModel *)sourceArray[indexPath.row];
     cell.drugModel = model;
-    //判断当前cell是否是选中状态
-    if (model.isDrugSelected)
-    {
-        //根据组号获取数组
-        self.currentArray = self.dataSoure[indexPath.section];
-        self.isAddNewDrug = YES;
-        //当前选中模型
-        self.currentCell = cell;
-        self.currentCell.countButton.selected = YES;
-        self.currentCell.drugModel.isDrugSelected = YES;
-
-    }
     //点击数量按钮
     __weak typeof(self) weakSelf = self;
     cell.clickCountBlock = ^(NSIndexPath *indexPath,BOOL isSelected,YYTableViewCell *cell){
@@ -128,6 +116,12 @@
     cell.clickDeleteBlock = ^(NSIndexPath *indexPath){
         [weakSelf clickDeleteButton];
     };
+    if (model.isDrugSelected)
+    {//指定当前对象
+        self.currentArray = self.dataSoure[indexPath.section];
+        self.isAddNewDrug = YES;
+        self.currentCell = cell;
+    }
     return cell;
 }
 
@@ -177,8 +171,7 @@
 - (void)addDrug:(UIButton *)sender
 {
     if (self.isAddNewSectionDrug)
-    {
-        NSLog(@"增加新的分组");
+    {//增加新的分组
         //数据源中添加药品
         YYDrugModel *model = [[YYDrugModel alloc] init];
         model.isDrugSelected = YES;
@@ -191,8 +184,7 @@
         self.isAddNewSectionDrug = NO;
     }
     else if(self.isAddNewDrug)
-    {
-        NSLog(@"增加新的药品");
+    {//增加新的药品
         [self.currentArray addObject:[[YYDrugModel alloc] init]];
         [self.tableView reloadData];
     }
