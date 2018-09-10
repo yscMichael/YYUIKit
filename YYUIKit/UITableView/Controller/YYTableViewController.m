@@ -122,10 +122,6 @@
         self.currentCell = cell;
         self.currentArray = self.dataSoure[indexPath.section];
     }
-    else
-    {
-        self.isAddNewDrug = NO;
-    }
     return cell;
 }
 
@@ -155,11 +151,19 @@
     NSMutableArray *tempArray = self.dataSoure[indexPath.section];
     //判断模型是否是选中状态(防止删除的是选中的那个)
     YYDrugModel *model = tempArray[indexPath.row];
-    if (model.isDrugSelected && tempArray.count > 1)
+    if (model.isDrugSelected)
     {
-        [tempArray removeObjectAtIndex:indexPath.row];
-        YYDrugModel *model = [tempArray firstObject];
-        model.isDrugSelected = YES;
+        if (tempArray.count > 1)
+        {
+            [tempArray removeObjectAtIndex:indexPath.row];
+            YYDrugModel *model = [tempArray firstObject];
+            model.isDrugSelected = YES;
+        }
+        else
+        {
+            self.isAddNewDrug = NO;
+            [tempArray removeObjectAtIndex:indexPath.row];
+        }
     }
     else
     {
@@ -191,10 +195,9 @@
     NSString *contentString = sender.isSelected ? [NSString stringWithFormat:@"%lu",self.dataSoure.count + 1] : @"";
     [sender setTitle:contentString forState:UIControlStateNormal];
     //设置cell状态
+    self.isAddNewDrug = NO;
     self.currentCell.drugModel.isDrugSelected = NO;
     self.currentCell.countButton.selected = NO;
-    self.isAddNewDrug = NO;
-    self.currentArray = nil;
 }
 
 #pragma mark - 增加药品
