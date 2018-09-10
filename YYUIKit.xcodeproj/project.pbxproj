@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		112916142146120700B27CF0 /* YYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112916132146120700B27CF0 /* YYTableViewController.m */; };
+		112916172146122100B27CF0 /* YYCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112916162146122100B27CF0 /* YYCollectionViewController.m */; };
+		1129161D214613D800B27CF0 /* YYMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1129161B214613D800B27CF0 /* YYMainTableViewCell.m */; };
+		1129161E214613D800B27CF0 /* YYMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1129161C214613D800B27CF0 /* YYMainTableViewCell.xib */; };
+		11291626214615D800B27CF0 /* YYFootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11291624214615D800B27CF0 /* YYFootView.xib */; };
+		11291627214615D800B27CF0 /* YYFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11291625214615D800B27CF0 /* YYFootView.m */; };
+		1129162C214615DE00B27CF0 /* YYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11291629214615DE00B27CF0 /* YYTableViewCell.m */; };
+		1129162D214615DE00B27CF0 /* YYTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1129162A214615DE00B27CF0 /* YYTableViewCell.xib */; };
+		11291631214615EA00B27CF0 /* YYDrugModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11291630214615EA00B27CF0 /* YYDrugModel.m */; };
 		119695B2213B9B5F006035D4 /* YYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 119695B1213B9B5F006035D4 /* YYAppDelegate.m */; };
 		119695B5213B9B5F006035D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 119695B4213B9B5F006035D4 /* ViewController.m */; };
 		119695B8213B9B5F006035D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119695B6213B9B5F006035D4 /* Main.storyboard */; };
@@ -36,6 +45,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		112916122146120700B27CF0 /* YYTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTableViewController.h; sourceTree = "<group>"; };
+		112916132146120700B27CF0 /* YYTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTableViewController.m; sourceTree = "<group>"; };
+		112916152146122100B27CF0 /* YYCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCollectionViewController.h; sourceTree = "<group>"; };
+		112916162146122100B27CF0 /* YYCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYCollectionViewController.m; sourceTree = "<group>"; };
+		1129161A214613D800B27CF0 /* YYMainTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYMainTableViewCell.h; sourceTree = "<group>"; };
+		1129161B214613D800B27CF0 /* YYMainTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYMainTableViewCell.m; sourceTree = "<group>"; };
+		1129161C214613D800B27CF0 /* YYMainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYMainTableViewCell.xib; sourceTree = "<group>"; };
+		11291623214615D800B27CF0 /* YYFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFootView.h; sourceTree = "<group>"; };
+		11291624214615D800B27CF0 /* YYFootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYFootView.xib; sourceTree = "<group>"; };
+		11291625214615D800B27CF0 /* YYFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFootView.m; sourceTree = "<group>"; };
+		11291629214615DE00B27CF0 /* YYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTableViewCell.m; sourceTree = "<group>"; };
+		1129162A214615DE00B27CF0 /* YYTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYTableViewCell.xib; sourceTree = "<group>"; };
+		1129162B214615DE00B27CF0 /* YYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTableViewCell.h; sourceTree = "<group>"; };
+		1129162F214615EA00B27CF0 /* YYDrugModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDrugModel.h; sourceTree = "<group>"; };
+		11291630214615EA00B27CF0 /* YYDrugModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYDrugModel.m; sourceTree = "<group>"; };
 		119695AD213B9B5F006035D4 /* YYUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		119695B0213B9B5F006035D4 /* YYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYAppDelegate.h; sourceTree = "<group>"; };
 		119695B1213B9B5F006035D4 /* YYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYAppDelegate.m; sourceTree = "<group>"; };
@@ -83,6 +107,91 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		112916112146119B00B27CF0 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				1129161F2146156900B27CF0 /* Controller */,
+				112916202146157D00B27CF0 /* View */,
+				1129162E214615EA00B27CF0 /* Model */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		112916182146139A00B27CF0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				119695B3213B9B5F006035D4 /* ViewController.h */,
+				119695B4213B9B5F006035D4 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11291619214613A200B27CF0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1129161A214613D800B27CF0 /* YYMainTableViewCell.h */,
+				1129161B214613D800B27CF0 /* YYMainTableViewCell.m */,
+				1129161C214613D800B27CF0 /* YYMainTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1129161F2146156900B27CF0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				112916122146120700B27CF0 /* YYTableViewController.h */,
+				112916132146120700B27CF0 /* YYTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		112916202146157D00B27CF0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11291622214615D800B27CF0 /* FootView */,
+				11291628214615DE00B27CF0 /* cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		112916212146158400B27CF0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				112916152146122100B27CF0 /* YYCollectionViewController.h */,
+				112916162146122100B27CF0 /* YYCollectionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11291622214615D800B27CF0 /* FootView */ = {
+			isa = PBXGroup;
+			children = (
+				11291623214615D800B27CF0 /* YYFootView.h */,
+				11291625214615D800B27CF0 /* YYFootView.m */,
+				11291624214615D800B27CF0 /* YYFootView.xib */,
+			);
+			path = FootView;
+			sourceTree = "<group>";
+		};
+		11291628214615DE00B27CF0 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				1129162B214615DE00B27CF0 /* YYTableViewCell.h */,
+				11291629214615DE00B27CF0 /* YYTableViewCell.m */,
+				1129162A214615DE00B27CF0 /* YYTableViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		1129162E214615EA00B27CF0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1129162F214615EA00B27CF0 /* YYDrugModel.h */,
+				11291630214615EA00B27CF0 /* YYDrugModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		119695A4213B9B5E006035D4 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +219,7 @@
 			children = (
 				11DA89C2213BA10700F57154 /* AppDelegate */,
 				11DA89C3213BA11500F57154 /* main */,
+				112916112146119B00B27CF0 /* UITableView */,
 				11DA89C5213BA39C00F57154 /* UICollectionView */,
 				11DA89C4213BA12000F57154 /* other */,
 			);
@@ -146,8 +256,8 @@
 		11DA89C3213BA11500F57154 /* main */ = {
 			isa = PBXGroup;
 			children = (
-				119695B3213B9B5F006035D4 /* ViewController.h */,
-				119695B4213B9B5F006035D4 /* ViewController.m */,
+				112916182146139A00B27CF0 /* Controller */,
+				11291619214613A200B27CF0 /* View */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -167,6 +277,7 @@
 		11DA89C5213BA39C00F57154 /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				112916212146158400B27CF0 /* Controller */,
 			);
 			path = UICollectionView;
 			sourceTree = "<group>";
@@ -293,7 +404,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				119695BD213B9B60006035D4 /* LaunchScreen.storyboard in Resources */,
+				1129162D214615DE00B27CF0 /* YYTableViewCell.xib in Resources */,
 				119695BA213B9B60006035D4 /* Assets.xcassets in Resources */,
+				1129161E214613D800B27CF0 /* YYMainTableViewCell.xib in Resources */,
+				11291626214615D800B27CF0 /* YYFootView.xib in Resources */,
 				119695B8213B9B5F006035D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,8 +455,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				119695B5213B9B5F006035D4 /* ViewController.m in Sources */,
+				1129162C214615DE00B27CF0 /* YYTableViewCell.m in Sources */,
 				119695C0213B9B60006035D4 /* main.m in Sources */,
+				112916172146122100B27CF0 /* YYCollectionViewController.m in Sources */,
 				119695B2213B9B5F006035D4 /* YYAppDelegate.m in Sources */,
+				1129161D214613D800B27CF0 /* YYMainTableViewCell.m in Sources */,
+				112916142146120700B27CF0 /* YYTableViewController.m in Sources */,
+				11291631214615EA00B27CF0 /* YYDrugModel.m in Sources */,
+				11291627214615D800B27CF0 /* YYFootView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,11 +635,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59PVTAC458;
 				INFOPLIST_FILE = YYUIKit/other/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.winwayworld.YYUIKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yangshichuan.aishangxian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -533,11 +654,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59PVTAC458;
 				INFOPLIST_FILE = YYUIKit/other/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.winwayworld.YYUIKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yangshichuan.aishangxian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
