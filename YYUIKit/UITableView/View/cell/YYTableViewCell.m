@@ -29,7 +29,7 @@
     if (self.clickCountBlock)
     {
         __weak typeof(self) weakSelf = self;
-        self.clickCountBlock(weakSelf.sectionInt,sender.isSelected,weakSelf);
+        self.clickCountBlock(weakSelf.indexPath,sender.isSelected,weakSelf);
     }
 }
 
@@ -39,23 +39,17 @@
     if (self.clickDeleteBlock)
     {
         __weak typeof(self) weakSelf = self;
-        self.clickDeleteBlock(weakSelf.row,weakSelf.sectionInt);
+        self.clickDeleteBlock(weakSelf.indexPath);
     }
 }
 
 #pragma mark - Getter And Setter
-- (void)setSectionInt:(int)sectionInt
+- (void)setIndexPath:(NSIndexPath *)indexPath
 {
-    _sectionInt = sectionInt;
+    _indexPath = indexPath;
     //设置假组头(每组的第一个)
-    [self.countButton setTitle:[NSString stringWithFormat:@"%d",sectionInt + 1] forState:UIControlStateNormal];
-}
-
-- (void)setRow:(int)row
-{
-    _row = row;
-    //设置假组头(每组的第一个)
-    self.countButton.hidden = (row == 0) ? NO : YES;
+    [self.countButton setTitle:[NSString stringWithFormat:@"%ld",indexPath.section + 1] forState:UIControlStateNormal];
+    self.countButton.hidden = (indexPath.row == 0) ? NO : YES;
 }
 
 - (void)setDrugModel:(YYDrugModel *)drugModel

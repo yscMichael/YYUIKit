@@ -75,8 +75,8 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 5)];
-    view.backgroundColor = [UIColor lightGrayColor];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 25)];
+    view.backgroundColor = [UIColor redColor];
     return view;
 }
 
@@ -101,10 +101,8 @@
 {
     YYTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    //组号
-    cell.sectionInt = (int)indexPath.section;
-    //行号
-    cell.row = (int)indexPath.row;
+    //位置
+    cell.indexPath = indexPath;
     //模型
     NSArray *sourceArray = self.dataSoure[indexPath.section];
     YYDrugModel *model = (YYDrugModel *)sourceArray[indexPath.row];
@@ -123,11 +121,11 @@
     }
     //点击数量按钮
     __weak typeof(self) weakSelf = self;
-    cell.clickCountBlock = ^(int section,BOOL isSelected,YYTableViewCell *cell){
-        [weakSelf clickCountButton:section isSelected:isSelected withCell:cell];
+    cell.clickCountBlock = ^(NSIndexPath *indexPath,BOOL isSelected,YYTableViewCell *cell){
+        [weakSelf clickCountButton:(int)indexPath.section isSelected:isSelected withCell:cell];
     };
     //点击删除按钮
-    cell.clickDeleteBlock = ^(int row,int sectionInt){
+    cell.clickDeleteBlock = ^(NSIndexPath *indexPath){
         [weakSelf clickDeleteButton];
     };
     return cell;
@@ -163,7 +161,7 @@
 #pragma mark - 点击删除按钮
 - (void)clickDeleteButton
 {
-
+    
 }
 
 #pragma mark - 增加分组
@@ -225,7 +223,7 @@
 {
     if (!_tableView)
     {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - 180)];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, ScreenWidth, ScreenHeight - 100 - 64)];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.backgroundColor = [UIColor greenColor];

@@ -10,19 +10,17 @@
 @class YYTableViewCell;
 @class YYDrugModel;
 //点击标签按钮
-typedef void (^ClickCountButtonBlock)(int sectionInt, BOOL isSelected,YYTableViewCell *cell);
+typedef void (^ClickCountButtonBlock)(NSIndexPath *indexPath, BOOL isSelected,YYTableViewCell *cell);
 //点击删除按钮
-typedef void (^ClickDeleteButtonBlick)(int row,int sectionInt);
+typedef void (^ClickDeleteButtonBlick)(NSIndexPath *indexPath);
 
 @interface YYTableViewCell : UITableViewCell
 //按钮
 @property (weak, nonatomic) IBOutlet UIButton *countButton;
 //删除按钮
 @property (weak, nonatomic) IBOutlet UIButton *deleteButton;
-//组号
-@property (nonatomic,assign) int sectionInt;
-//行号
-@property (nonatomic,assign) int row;
+//位置
+@property (nonatomic,strong) NSIndexPath *indexPath;
 //model
 @property (nonatomic,strong) YYDrugModel *drugModel;
 //block
