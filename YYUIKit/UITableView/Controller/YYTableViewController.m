@@ -110,29 +110,33 @@
     //点击数量按钮
     __weak typeof(self) weakSelf = self;
     cell.clickCountBlock = ^(NSIndexPath *indexPath,BOOL isSelected,YYTableViewCell *cell){
-        [weakSelf clickCountButton:(int)indexPath.section isSelected:isSelected withCell:cell];
+        [weakSelf clickCountButton:indexPath isSelected:isSelected withCell:cell];
     };
     //点击删除按钮
     cell.clickDeleteBlock = ^(NSIndexPath *indexPath){
-        [weakSelf clickDeleteButton];
+        [weakSelf clickDeleteButton:indexPath];
     };
     if (model.isDrugSelected)
     {//指定当前对象
-        self.currentArray = self.dataSoure[indexPath.section];
         self.isAddNewDrug = YES;
         self.currentCell = cell;
+        self.currentArray = self.dataSoure[indexPath.section];
+    }
+    else
+    {
+        self.isAddNewDrug = NO;
     }
     return cell;
 }
 
 #pragma mark - Event Response
 #pragma mark - 点击数量按钮
-- (void)clickCountButton:(int)sectionInt isSelected:(BOOL)isSelected withCell:(YYTableViewCell *)cell
+- (void)clickCountButton:(NSIndexPath *)indexPath isSelected:(BOOL)isSelected withCell:(YYTableViewCell *)cell
 {
     //选中标志
     self.isAddNewDrug = isSelected;
     //当前数组处理
-    self.currentArray = isSelected ? self.dataSoure[sectionInt]: nil;
+    self.currentArray = isSelected ? self.dataSoure[indexPath.section]: nil;
     //旧模型取消选中
     self.currentCell.countButton.selected = NO;
     self.currentCell.drugModel.isDrugSelected = NO;
@@ -146,9 +150,34 @@
 }
 
 #pragma mark - 点击删除按钮
-- (void)clickDeleteButton
+- (void)clickDeleteButton:(NSIndexPath *)indexPath
 {
-    
+    NSMutableArray *tempArray = self.dataSoure[indexPath.section];
+    //判断模型是否是选中状态(防止删除的是选中的那个)
+    YYDrugModel *model = tempArray[indexPath.row];
+    if (model.isDrugSelected && tempArray.count > 1)
+    {
+        [tempArray removeObjectAtIndex:indexPath.row];
+        YYDrugModel *model = [tempArray firstObject];
+        model.isDrugSelected = YES;
+    }
+    else
+    {
+        [tempArray removeObjectAtIndex:indexPath.row];
+    }
+    //遍历数组(去除空数组)
+    NSMutableArray *resultArray = [[NSMutableArray alloc] init];
+    for (int i = 0; i < self.dataSoure.count; i ++)
+    {
+        NSMutableArray *temp = (NSMutableArray *)self.dataSoure[i];
+        if (temp.count != 0)
+        {
+            [resultArray addObject:temp];
+        }
+    }
+    [self.dataSoure removeAllObjects];
+    [self.dataSoure addObjectsFromArray:resultArray];
+    [self.tableView reloadData];
 }
 
 #pragma mark - 增加分组
@@ -161,10 +190,11 @@
     //设置显示文字
     NSString *contentString = sender.isSelected ? [NSString stringWithFormat:@"%lu",self.dataSoure.count + 1] : @"";
     [sender setTitle:contentString forState:UIControlStateNormal];
-    //设置cell选中状态
+    //设置cell状态
     self.currentCell.drugModel.isDrugSelected = NO;
     self.currentCell.countButton.selected = NO;
     self.isAddNewDrug = NO;
+    self.currentArray = nil;
 }
 
 #pragma mark - 增加药品
@@ -172,7 +202,7 @@
 {
     if (self.isAddNewSectionDrug)
     {//增加新的分组
-        //数据源中添加药品
+        NSLog(@"增加新的分组增加新的分组---1");
         YYDrugModel *model = [[YYDrugModel alloc] init];
         model.isDrugSelected = YES;
         NSMutableArray *tempArray = [[NSMutableArray alloc] initWithObjects:model, nil];
@@ -185,6 +215,7 @@
     }
     else if(self.isAddNewDrug)
     {//增加新的药品
+        NSLog(@"增加新的药品----2");
         [self.currentArray addObject:[[YYDrugModel alloc] init]];
         [self.tableView reloadData];
     }

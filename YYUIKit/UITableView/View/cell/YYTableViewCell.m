@@ -36,6 +36,7 @@
 #pragma mark - 点击删除按钮
 - (IBAction)clickDeleteButton:(UIButton *)sender
 {
+    NSLog(@"点击删除按钮");
     if (self.clickDeleteBlock)
     {
         __weak typeof(self) weakSelf = self;
