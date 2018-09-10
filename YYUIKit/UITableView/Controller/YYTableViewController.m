@@ -135,27 +135,20 @@
 #pragma mark - 点击数量按钮
 - (void)clickCountButton:(int)sectionInt isSelected:(BOOL)isSelected withCell:(YYTableViewCell *)cell
 {
-    if (isSelected)
-    {
-        NSLog(@"sectionIntsectionInt = %d",sectionInt);
-        //根据组号获取数组
-        self.currentArray = self.dataSoure[sectionInt];
-        self.isAddNewDrug = YES;
-        //旧模型取消选中
-        self.currentCell.countButton.selected = NO;
-        self.currentCell.drugModel.isDrugSelected = NO;
-        //当前选中cell,选中(放置选中同一个)
-        self.currentCell = cell;
-        self.currentCell.countButton.selected = YES;
-        self.currentCell.drugModel.isDrugSelected = YES;
-        //底部按钮选中消除
-        self.footView.addButton.selected = NO;
-        self.isAddNewSectionDrug = NO;
-    }
-    else
-    {
-        self.isAddNewDrug = NO;
-    }
+    //选中标志
+    self.isAddNewDrug = isSelected;
+    //当前数组处理
+    self.currentArray = isSelected ? self.dataSoure[sectionInt]: nil;
+    //旧模型取消选中
+    self.currentCell.countButton.selected = NO;
+    self.currentCell.drugModel.isDrugSelected = NO;
+    //当前模型状态更新
+    self.currentCell = cell;
+    self.currentCell.countButton.selected = isSelected;
+    self.currentCell.drugModel.isDrugSelected = isSelected;
+    //底部按钮选中消除
+    self.footView.addButton.selected = NO;
+    self.isAddNewSectionDrug = NO;
 }
 
 #pragma mark - 点击删除按钮
@@ -169,19 +162,15 @@
 {
     NSLog(@"选中增加分组按钮");
     sender.selected = !sender.selected;
-    if (sender.isSelected)
-    {
-        self.currentCell.drugModel.isDrugSelected = NO;
-        self.currentCell.countButton.selected = NO;
-        self.isAddNewDrug = NO;
-        [sender setTitle:[NSString stringWithFormat:@"%lu",(unsigned long)self.dataSoure.count + 1] forState:UIControlStateNormal];
-        self.isAddNewSectionDrug = YES;
-    }
-    else
-    {
-        [sender setTitle:@"" forState:UIControlStateNormal];
-        self.isAddNewSectionDrug = NO;
-    }
+    //设置选中标志
+    self.isAddNewSectionDrug = sender.selected;
+    //设置显示文字
+    NSString *contentString = sender.isSelected ? [NSString stringWithFormat:@"%lu",self.dataSoure.count + 1] : @"";
+    [sender setTitle:contentString forState:UIControlStateNormal];
+    //设置cell选中状态
+    self.currentCell.drugModel.isDrugSelected = NO;
+    self.currentCell.countButton.selected = NO;
+    self.isAddNewDrug = NO;
 }
 
 #pragma mark - 增加药品
