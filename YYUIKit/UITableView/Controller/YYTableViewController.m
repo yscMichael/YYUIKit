@@ -42,7 +42,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor lightGrayColor];
     [self initData];
     [self initView];
 }
@@ -62,12 +62,31 @@
 - (void)initView
 {
     [self.view addSubview:self.tableView];
-    [self.view addSubview:self.footView];
+    //[self.view addSubview:self.footView];
     [self.view addSubview:self.bottomButton];
-    self.footView.frame = CGRectMake(0, ScreenHeight - 100, ScreenWidth, 50);
+
+    self.tableView.tableFooterView = self.footView;
+    self.footView.frame = CGRectMake(0, 0, ScreenWidth, 50);
+    self.footView.layer.borderColor = [UIColor redColor].CGColor;
+    self.footView.layer.borderWidth = 1.0;
 }
 
 #pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //动态设置TableView加载完毕后TableView的高度
+    if(indexPath.row == ((NSIndexPath *)[[tableView indexPathsForVisibleRows] lastObject]).row)
+    {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.tableView.frame = CGRectMake(self.tableView.frame.origin.x, self.tableView.frame.origin.y, ScreenWidth, tableView.contentSize.height);
+            //需要重新设置footView
+            CGRect frame = self.footView.frame;
+            frame.size.height = 50;
+            self.footView.frame = frame;
+        });
+    }
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     return 5;
@@ -287,5 +306,6 @@
     }
     return _bottomButton;
 }
+
 
 @end
