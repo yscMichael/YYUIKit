@@ -10,6 +10,7 @@
 #import "YYTableViewCell.h"
 #import "YYFootView.h"
 #import "YYDrugModel.h"
+#import "YYNoDataView.h"
 
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
@@ -33,6 +34,10 @@
 @property (nonatomic,strong) NSMutableArray *currentArray;
 //当前选中的cell
 @property (nonatomic,strong) YYTableViewCell *currentCell;
+//无数据提示
+@property (nonatomic,strong) YYNoDataView *noDataView;
+//无数据
+@property (nonatomic,assign) BOOL isNoData;
 
 @end
 
@@ -51,6 +56,7 @@
 {
     self.isAddNewSectionDrug = NO;
     self.isAddNewDrug = NO;
+    self.isNoData = NO;
     NSMutableArray *tempOne = [[NSMutableArray alloc] initWithObjects:[[YYDrugModel alloc] init], nil];
     NSMutableArray *tempTwo = [[NSMutableArray alloc] initWithObjects:[[YYDrugModel alloc] init], nil];
     NSMutableArray *tempThree = [[NSMutableArray alloc] initWithObjects:[[YYDrugModel alloc] init],[[YYDrugModel alloc] init], nil];
@@ -62,13 +68,10 @@
 - (void)initView
 {
     [self.view addSubview:self.tableView];
-    //[self.view addSubview:self.footView];
     [self.view addSubview:self.bottomButton];
 
     self.tableView.tableFooterView = self.footView;
     self.footView.frame = CGRectMake(0, 0, ScreenWidth, 50);
-    self.footView.layer.borderColor = [UIColor redColor].CGColor;
-    self.footView.layer.borderWidth = 1.0;
 }
 
 #pragma mark - UITableViewDelegate
@@ -200,6 +203,11 @@
     }
     [self.dataSoure removeAllObjects];
     [self.dataSoure addObjectsFromArray:resultArray];
+    //处理无数据
+    if (self.dataSoure.count == 0)
+    {
+        [self dealNoData];
+    }
     [self.tableView reloadData];
 }
 
@@ -229,6 +237,11 @@
         model.isDrugSelected = YES;
         NSMutableArray *tempArray = [[NSMutableArray alloc] initWithObjects:model, nil];
         [self.dataSoure addObject:tempArray];
+        if (self.isNoData)
+        {
+            [self.noDataView removeFromSuperview];
+            self.isNoData = NO;
+        }
         //刷新列表
         [self.tableView reloadData];
         //重置footView
@@ -252,6 +265,19 @@
     }
 }
 
+#pragma mark - Private Methods
+- (void)dealNoData
+{
+    CGRect frame = self.tableView.frame;
+    frame.size.height = 200;
+    self.tableView.frame = frame;
+    self.footView.frame = CGRectMake(0, 0, ScreenWidth, 50);
+    [self.view addSubview:self.noDataView];
+    [self.view bringSubviewToFront:self.noDataView];
+    self.isAddNewSectionDrug = YES;
+    self.isNoData = YES;
+}
+
 #pragma mark - Getter And Setter
 - (UITableView *)tableView
 {
@@ -260,20 +286,12 @@
         _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, ScreenWidth, ScreenHeight - 100 - 64)];
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        _tableView.bounces = NO;
         _tableView.backgroundColor = [UIColor greenColor];
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [_tableView registerNib:[UINib nibWithNibName:@"YYTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
     }
     return _tableView;
-}
-
-- (NSMutableArray *)dataSoure
-{
-    if (!_dataSoure)
-    {
-        _dataSoure = [[NSMutableArray alloc] init];
-    }
-    return _dataSoure;
 }
 
 - (YYFootView *)footView
@@ -286,13 +304,14 @@
     return _footView;
 }
 
-- (NSMutableArray *)currentArray
+- (YYNoDataView *)noDataView
 {
-    if (!_currentArray)
+    if (!_noDataView)
     {
-        _currentArray = [[NSMutableArray alloc] init];
+        _noDataView = [[[NSBundle mainBundle] loadNibNamed:@"YYNoDataView" owner:nil options:nil] lastObject];
+        _noDataView.frame = CGRectMake(0, 64, ScreenWidth, 200);
     }
-    return _currentArray;
+    return _noDataView;
 }
 
 - (UIButton *)bottomButton
@@ -307,5 +326,22 @@
     return _bottomButton;
 }
 
+- (NSMutableArray *)dataSoure
+{
+    if (!_dataSoure)
+    {
+        _dataSoure = [[NSMutableArray alloc] init];
+    }
+    return _dataSoure;
+}
+
+- (NSMutableArray *)currentArray
+{
+    if (!_currentArray)
+    {
+        _currentArray = [[NSMutableArray alloc] init];
+    }
+    return _currentArray;
+}
 
 @end

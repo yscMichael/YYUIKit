@@ -49,7 +49,7 @@
 {
     _indexPath = indexPath;
     //设置假组头(每组的第一个)
-    [self.countButton setTitle:[NSString stringWithFormat:@"%ld",indexPath.section + 1] forState:UIControlStateNormal];
+    [self.countButton setTitle:[NSString stringWithFormat:@"%d",indexPath.section + 1] forState:UIControlStateNormal];
     self.countButton.hidden = (indexPath.row == 0) ? NO : YES;
 }
 
