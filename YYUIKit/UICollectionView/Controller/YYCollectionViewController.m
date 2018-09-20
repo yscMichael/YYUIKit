@@ -202,7 +202,7 @@ collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
     //设置选中标志
     self.isAddNewSectionDrug = sender.selected;
     //设置显示文字
-    NSString *contentString = sender.isSelected ? [NSString stringWithFormat:@"%lu",self.dataSource.count + 1] : @"";
+    NSString *contentString = sender.isSelected ? [NSString stringWithFormat:@"%u",self.dataSource.count + 1] : @"";
     [sender setTitle:contentString forState:UIControlStateNormal];
     //设置cell状态
     self.isAddNewDrug = NO;
