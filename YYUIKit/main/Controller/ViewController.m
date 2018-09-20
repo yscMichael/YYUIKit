@@ -79,8 +79,9 @@
     {
 
         _dataSoure = [[NSMutableArray alloc]initWithObjects:
-                      @"UITableView",
-                      @"UICollectionView",nil];
+                      @"UITableView分组",
+                      @"UICollectionView分组",
+                      @"UITableView嵌套",nil];
     }
     return _dataSoure;
 }
@@ -91,7 +92,8 @@
     {
         _controllerSoure = [[NSMutableArray alloc] initWithObjects:
                             @"YYTableViewController",
-                            @"YYCollectionViewController",nil];
+                            @"YYCollectionViewController",
+                            @"YYNestingTableViewController",nil];
     }
     return _controllerSoure;
 }
