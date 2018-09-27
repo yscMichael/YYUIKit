@@ -81,7 +81,8 @@
         _dataSoure = [[NSMutableArray alloc]initWithObjects:
                       @"UITableView分组",
                       @"UICollectionView分组",
-                      @"UITableView嵌套",nil];
+                      @"UITableView嵌套",
+                      @"UIDatePicker时间选择器",nil];
     }
     return _dataSoure;
 }
@@ -93,7 +94,8 @@
         _controllerSoure = [[NSMutableArray alloc] initWithObjects:
                             @"YYTableViewController",
                             @"YYCollectionViewController",
-                            @"YYNestingTableViewController",nil];
+                            @"YYNestingTableViewController",
+                            @"YYDatePickerController",nil];
     }
     return _controllerSoure;
 }
