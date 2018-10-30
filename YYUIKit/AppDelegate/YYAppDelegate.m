@@ -7,7 +7,7 @@
 //
 
 #import "YYAppDelegate.h"
-#import "ViewController.h"
+#import "YYMainViewController.h"
 
 @interface YYAppDelegate ()
 
@@ -15,10 +15,9 @@
 
 @implementation YYAppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    ViewController *viewCtrl = [[ViewController alloc]init];
+    YYMainViewController *viewCtrl = [[YYMainViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:viewCtrl];
     self.window = [[UIWindow alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     self.window.rootViewController = nav;

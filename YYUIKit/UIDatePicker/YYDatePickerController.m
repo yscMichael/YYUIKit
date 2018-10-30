@@ -31,14 +31,14 @@
     //设置当前时间
     //[self.datePicker setDate:[NSDate date] animated:YES];
     //设置最大时间
-    [self.datePicker setMaximumDate:[NSDate date]];
+//    [self.datePicker setMaximumDate:[NSDate date]];
     //设置最小时间
     NSDate *currentDate = [NSDate date];
     NSCalendar*calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierChinese];
     NSDateComponents *comps = [[NSDateComponents alloc] init];
     [comps setYear:-10];//设置最小时间为：当前时间前推十年
     NSDate *minDate = [calendar dateByAddingComponents:comps toDate:currentDate options:0];
-    [self.datePicker setMinimumDate:minDate];
+//    [self.datePicker setMinimumDate:minDate];
 
 
     //设置模式

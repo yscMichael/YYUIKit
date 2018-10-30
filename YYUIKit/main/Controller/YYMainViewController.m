@@ -1,19 +1,19 @@
 //
-//  ViewController.m
+//  YYMainViewController.m
 //  YYUIKit
 //
 //  Created by 杨世川 on 2018/9/2.
 //  Copyright © 2018年 winwayworld. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "YYMainViewController.h"
 #import "YYMainTableViewCell.h"
 
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 #define BarHeight 20
 
-@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface YYMainViewController ()<UITableViewDataSource,UITableViewDelegate>
 //列表
 @property (nonatomic,strong) UITableView *tableView;
 //展示数据源
@@ -22,7 +22,7 @@
 @property (nonatomic,strong) NSMutableArray *controllerSoure;
 @end
 
-@implementation ViewController
+@implementation YYMainViewController
 
 #pragma mark - Cycle Life
 - (void)viewDidLoad
@@ -79,6 +79,7 @@
     {
 
         _dataSoure = [[NSMutableArray alloc]initWithObjects:
+                      @"数组排序",
                       @"UITableView分组",
                       @"UICollectionView分组",
                       @"UITableView嵌套",
@@ -92,6 +93,7 @@
     if (!_controllerSoure)
     {
         _controllerSoure = [[NSMutableArray alloc] initWithObjects:
+                            @"YYArraySortViewController",
                             @"YYTableViewController",
                             @"YYCollectionViewController",
                             @"YYNestingTableViewController",

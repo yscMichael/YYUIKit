@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  YYMainViewController.h
 //  YYUIKit
 //
 //  Created by 杨世川 on 2018/9/2.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface YYMainViewController : UIViewController
 
 
 @end
