@@ -1,16 +1,20 @@
 PODS:
   - Masonry (1.1.0)
+  - YYButton (0.0.9)
 
 DEPENDENCIES:
   - Masonry
+  - YYButton
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Masonry
+    - YYButton
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  YYButton: 0c906d8a51001efa3790df5a4ffcb2898c112244
 
-PODFILE CHECKSUM: c710bd54e42e7299217cf4d08824dc748787eb65
+PODFILE CHECKSUM: ead25d923c8ce023deb0986fb1776cf2891845ed
 
 COCOAPODS: 1.5.3

@@ -23,7 +23,6 @@
 @end
 
 @implementation YYMainViewController
-
 #pragma mark - Cycle Life
 - (void)viewDidLoad
 {

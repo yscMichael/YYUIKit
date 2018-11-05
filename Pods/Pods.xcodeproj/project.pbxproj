@@ -7,89 +7,188 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		100DCBFE39E91CF7A296FABFAB4D7CC6 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 915A6FF0E04F5A5C0ACDE0E32BD2F193 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		13635B78121B99E5C03C92506A161607 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F28AEAAF722BC62BF5B37D6663BBC2 /* MASViewAttribute.m */; };
-		1B42705AF769FA7697BEAB1BBB969EC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		214DF0B6664033C87D6B846599FB477A /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E158FC65C5404E098F16E26F478DA504 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		28287B92B5FC46907F1F830A6C44BA28 /* Pods-YYUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB75A0A5ED619EAEBDF558AC2A925E6 /* Pods-YYUIKit-dummy.m */; };
-		2DBB74B8B5DDB1F621433DD12BF35102 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C02266037F030E22468AC86802DB57 /* MASViewConstraint.m */; };
-		3E8E6916C563B9CB12AA417275FC6EB3 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C762C4F3A304C10AF7EBEA6AAA8508A0 /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		523F69012549DCADB26D11EFB6593B5B /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = EC0384F145CF471A951BA8E9486AD626 /* Masonry.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5EBFADB0ACACA114B98082EBD8FDA650 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 043FB94CF93050E20D8E4C071ACFA5D2 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		61CCEA01CBE8EFFA5515E7A0D8635AAE /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EC6EDDDD3E503C5B2E967D3FEECFEB /* MASCompositeConstraint.m */; };
+		070725B55A36B0E97F2FB7DDB8E02E96 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E818CBBFA7E8A109C50D196C71B7DC5 /* BasicViewController.m */; };
+		0A10070920AAAAF1C64DFB4DFE3854FF /* DynamicViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 449000AA45E3B3F541C051ADD48B2F4D /* DynamicViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		100DCBFE39E91CF7A296FABFAB4D7CC6 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 56B251F4567245B4E7F69F5C425705BC /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		12373C9E4E5CED4124EC177CC28B7FE0 /* BasicLayoutController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ED340320E3BEECC9C306045151D4874 /* BasicLayoutController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		13635B78121B99E5C03C92506A161607 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = C64D240EC4C0576F7E66E8ACD543FE00 /* MASViewAttribute.m */; };
+		181B5934467E83DA3B35C288AF235742 /* FinalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C2FC6A98F19CA624E1B4DCE88FBEA4 /* FinalViewController.m */; };
+		20F3342DD1B1F255A65A14C54F29008E /* RectViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F06716E9208EB747DE5B9F90379696B4 /* RectViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		214DF0B6664033C87D6B846599FB477A /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 648282296E3CF24C979EC5F5438C48E0 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		22A8C461057724D29D9424896CECB941 /* ImageViewRightController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26103ED40FD30E2C459618313F434C18 /* ImageViewRightController.m */; };
+		270561B056E57DC4AB5337A143F87930 /* ImageViewUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34ECF8CE14B77877E810156868DC4FDE /* ImageViewUpController.m */; };
+		290ABDAD10087EF3538F24FDE7B6DA1F /* LayoutViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 59B2D49CFD0D6FCAABA61ABC032F9D30 /* LayoutViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2D6F3EEAE57854523B3E51330932E436 /* FinalViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B18B13A5BEB8027881FF1910F23E28E8 /* FinalViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2DBB74B8B5DDB1F621433DD12BF35102 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE3A924FBDE4E1FBEC1B6128FB313F1 /* MASViewConstraint.m */; };
+		366A2D7CCB0F5BE3489F214C6E5B38B7 /* Pods-YYUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB75A0A5ED619EAEBDF558AC2A925E6 /* Pods-YYUIKit-dummy.m */; };
+		3BB40CF61531CECD144D2EEEB305A066 /* YYButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E562A1DE37AC86628D056E24AB90CF /* YYButton-dummy.m */; };
+		3E8E6916C563B9CB12AA417275FC6EB3 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 527AE316057F5347B8F11EDD95505310 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		4892902731975CF76B284BEC12039A6B /* ExpandButtonAreaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA83BA8C749A72F514773A8C398D3EA /* ExpandButtonAreaController.m */; };
+		50E06C20F46159735E4182CE79AC16F9 /* YYLayoutButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E6E1D05A4DF9DE424C20ED36CBE11CA /* YYLayoutButton.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		523F69012549DCADB26D11EFB6593B5B /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 55420234445409EFB2E9073D26D718AD /* Masonry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		52E8E5BFD9E1F40249FE9B844F26E434 /* ImageViewDownController.h in Headers */ = {isa = PBXBuildFile; fileRef = B5E5A725CB1B9BC59826F23591B84FC2 /* ImageViewDownController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		540913E63F67E6E5F60A5E845D5E2D80 /* YYRectButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 0159E79E4CDAA6DD65B754FEF29AB587 /* YYRectButton.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		57AFBAB89C3AC1C9A54E041F84BDF76F /* YYLayoutButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A98CFA94DA6127D7BBFC789FB1A3CD7 /* YYLayoutButton.m */; };
+		599C5DAA618DA5E6BEE43FF5DCA46BBC /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 85763E07627AFE2C03A0388DFC1640C2 /* AppDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5EBFADB0ACACA114B98082EBD8FDA650 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C9EC870974D130779B3B9723FE0A934 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		61CCEA01CBE8EFFA5515E7A0D8635AAE /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CDF04A945F1D20E29A57E7D643D834 /* MASCompositeConstraint.m */; };
 		6209E20926D79222E59F58B962BFAA1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		68F98758BA84B8EC3472A8C6FD646D16 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5A231E76AF7DC6CB887B5B2C522A7A /* Masonry-dummy.m */; };
-		6FBEF9BEF976F73220F5EA0246FA6674 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 3162AC8E29FA7F3BF0D8641F7F4D9B60 /* MASConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7AC0D0965486ED43C064F1BC177ACBC9 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 1321572A3ED9C894C94A131BE29B81B2 /* MASUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7BDDE51AF16FA53A09506EDB91E1C3C2 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8229525E7067F22D3977D2628DF5F2C3 /* NSArray+MASAdditions.m */; };
-		81C1291C7ABA4942277F5756671AEE37 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 22E2395DA2EBCF6241A0DA0E1859FF45 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		86B2DF4CC6E598AAA73D0CC6EEBA0E96 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FA891F8E85C079B4FB101DDD5BC7A477 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		89450A58FD91E5B227171FC75160E4EA /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F937BDEB8DF93A08D20C5355C0FDB5C /* MASConstraint.m */; };
-		92711327ED7920702A69A828271279AE /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A9F610CB90E57B81F8F7DCA2176E0FD /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		955BE39896CA35F2A585DC3309E5FDA5 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 807FFD255E8235D5B42FE078299B5F1B /* MASLayoutConstraint.m */; };
-		9AB27A7F752AB644728D50B0228A070E /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = B48867DE203BCF3BB3DFCAB8FDC7516B /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9BFAE06AC2F3B426C64EEDBF8C99A69E /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B179F4D3D34A3CE25A698B8D9AC9D6C2 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A1FA046FDFC42676D17FEC387B10D24A /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCC2A09AC3DCD0E4A3D268DAABC5135 /* View+MASAdditions.m */; };
-		B5EC5518E18B05A5334C49ABBF4C78F7 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 780A86CEB0A0131C88BE12414D500734 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C6E83C10646E2DF6C83A578CE6AF0E5A /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E7E17DB5590A8C4D9625D67E6FBD243 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D7CE05A743B7ACD50796191FA442814C /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CED739CF35B6D0A1D95AE17D712A7F /* ViewController+MASAdditions.m */; };
-		DF7F88B58B564EDF169EC0C9CF8E5124 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AB44751192F0AA8DA5F75A06138D15 /* MASConstraintMaker.m */; };
+		68F98758BA84B8EC3472A8C6FD646D16 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA87FEB0C1E74DF5B5067A5D3C02EBD /* Masonry-dummy.m */; };
+		6FBEF9BEF976F73220F5EA0246FA6674 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 19B75C941BD3E1FA9A82AACCCF40486B /* MASConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		747F1590814617D0D73826FC4C44F754 /* LeftAndTopButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11829ECA5BD6C31EEB5AE0757CC7920F /* LeftAndTopButtonController.m */; };
+		74FB1A3593D0931AD0DF4544DA66102D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C08A0F81C328281340962D59C151B1 /* ViewController.m */; };
+		770C7CC80E20A89DF33AC93058ABECDB /* LeftAndTopButtonController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EE1ACF707254B645126BB3BE053B7A0 /* LeftAndTopButtonController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7916DA6288CEE279BAD5F750F182A8DB /* ImageIsBiggerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 138420BB0D4C40CBF87F7B187C56D037 /* ImageIsBiggerController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7AC0D0965486ED43C064F1BC177ACBC9 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = EED90CC8C4FA8354EA7824ACC3C25552 /* MASUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7BC7A8DBBE54CFF8B8027C47ACD92E5F /* BasicLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D02DE6E1A52E592163B90135A12A54 /* BasicLayoutController.m */; };
+		7BDDE51AF16FA53A09506EDB91E1C3C2 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 274197BF7B61B298C64717584474B2C8 /* NSArray+MASAdditions.m */; };
+		8039A4E726BDB10801AFA58F7FB5FBD8 /* YYButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1756E34B74DAC9EC08B79E0AEBFD6C54 /* YYButton.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		81C1291C7ABA4942277F5756671AEE37 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = EB9FA750B5064439C2E33105C5C6AA1A /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		86B2DF4CC6E598AAA73D0CC6EEBA0E96 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 071A84985FA2C58DAE545A69C842C68A /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		89450A58FD91E5B227171FC75160E4EA /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AA56FF2A547A6A3142182FE2962013 /* MASConstraint.m */; };
+		8A7AA52C52DA84BAB30111A4179F82ED /* BottomLeftButtonController.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F380F54DD0F4CDC77B4416DBBCA379 /* BottomLeftButtonController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8A95C10A4D74F3FD3CDB2F8C39848036 /* RectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C0D9BCC24E510672B5F8EE4BD8DBBD /* RectViewController.m */; };
+		90673D510BA7957539B8A773C3E764DF /* BottomLeftButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EDB7D3DD7B00E5AEFA30B5B6EE82CD /* BottomLeftButtonController.m */; };
+		92711327ED7920702A69A828271279AE /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BC9BAFCC0BEAAEBDB9D6F2688D2C393 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		955BE39896CA35F2A585DC3309E5FDA5 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1613B7960C4AA9359877316224AAA7 /* MASLayoutConstraint.m */; };
+		9888950F74C3A417FF9D3A135AA64D53 /* ViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D493C9201EA789C5C91D36B4D53D591 /* ViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9AB27A7F752AB644728D50B0228A070E /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DAABD9F4BFB8F6A5ED1722DC975C6E8 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9B2B34C045C1679E18B0DAC22193519C /* ExpandButtonAreaController.h in Headers */ = {isa = PBXBuildFile; fileRef = 23800255C97A43131E7C760FB3B909C6 /* ExpandButtonAreaController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9BA48ED81BA4491765E72B5472E0DDE3 /* ImageViewRightController.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE4F8EC306D71D8703655E2669BDB23 /* ImageViewRightController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9BFAE06AC2F3B426C64EEDBF8C99A69E /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E5559B2EB84B7DAC381A404DB1CF6AB2 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A1437B974CEA275839A7FE01D5943734 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		A1FA046FDFC42676D17FEC387B10D24A /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FB66E8E25087100A6D686D73C2468EEB /* View+MASAdditions.m */; };
+		A215759B5D2444BB29E8CAB9A6D4D1A7 /* RightAndTopButtonController.h in Headers */ = {isa = PBXBuildFile; fileRef = A417D550091BA43381CCB594E61EAF22 /* RightAndTopButtonController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A60411E2D8EDB036306843E1E3D2DD5B /* ExpandButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFF8BFA23BB6880AC0A0BD9877560B7 /* ExpandButton.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A9CC3164CB364E6D2BCFF2A0A3782DD2 /* DynamicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4368AB39D129FAFC8FEA8DC411D4E1ED /* DynamicViewController.m */; };
+		AA399510E6E1BED56DD60C43511F7297 /* ExpandButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD6FF437428FDECAAA88E86CD2C7FD /* ExpandButton.m */; };
+		ACA8DB24E6944E0CFBB43274316ECCE2 /* YYRectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC3443E705680511F2E09F905F9EC65 /* YYRectButton.m */; };
+		AD73C7379BA9E228CC186D45DF45D387 /* BasicViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8856A7B3F1B663A5F2DB64B18170F8 /* BasicViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B4DAC48F057724DBC25EFBA0B12E4950 /* ImageViewDownController.m in Sources */ = {isa = PBXBuildFile; fileRef = 249030746DA65B7B81A63564289ACD62 /* ImageViewDownController.m */; };
+		B5EC5518E18B05A5334C49ABBF4C78F7 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A9A6892B0E5EDC87E3554657A0FBAE5 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B76ECA3CA47DA7AFE1AD230915BD653E /* RightAndTopButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E299B36C10202CD9981821EF6AFD0 /* RightAndTopButtonController.m */; };
+		C6E83C10646E2DF6C83A578CE6AF0E5A /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C62CFACB2C46ACB550E6DFBEF3594229 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C7EEB22D025C9DAB019435C1313A99D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		D67F2062BD5606546109258272CBC9C1 /* ImageIsBiggerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D3172093B3136795270AB66135A01D /* ImageIsBiggerController.m */; };
+		D68093605D31843EF2498D3D643940FE /* BottomRightButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AF69BAA38A17A2DFAF6942EB66133B /* BottomRightButtonController.m */; };
+		D7CE05A743B7ACD50796191FA442814C /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E80C5CEBFDDB698E197252EC2D1C48C /* ViewController+MASAdditions.m */; };
+		DF7F88B58B564EDF169EC0C9CF8E5124 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = D995F03836FC051947630DFA4C4EF4ED /* MASConstraintMaker.m */; };
+		E1184403C4AF6E046D179F97E4E985BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 215CFAF592320F0091E09B3B23A10089 /* main.m */; };
+		E3D12FB71A7B112E7B4EA39D08CFE917 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72CDCDBA2FC8A8943C90E846C74068F8 /* AppDelegate.m */; };
+		E842047286256E21D76C3A04FD8EA23E /* LayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B56B6A9EE5B828E8628DD0841E1799 /* LayoutViewController.m */; };
 		F0B56A7D38A399A2F67F9920C9526A66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		F861D2DADCE8A8F94F1DCB22EB8A6CE2 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 475326F2A929CD1AFFB74850961F32C0 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FB415F79751F1A1F2203183C3CEE0723 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FBE23E70FF64ACC81816A368E171B903 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F31AC3D64EB70A5C2CD6DA5A7FC5E813 /* BottomRightButtonController.h in Headers */ = {isa = PBXBuildFile; fileRef = 37E5F1C884341DED0C8FC1C33A143352 /* BottomRightButtonController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F861D2DADCE8A8F94F1DCB22EB8A6CE2 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 335F87A76BF991AEAB341454E1A198F2 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FA5FF0978D338D304C042874A28FB2BC /* ImageViewUpController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2136008E8179CC571606842D1B20FC5D /* ImageViewUpController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FB415F79751F1A1F2203183C3CEE0723 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ED980DED70ABD908C4AA6E55EAF62FB /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FF2C784B1DB3993853852A261F0C290E /* YYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9A9BEA8CAAD34F1E29190D27FD15E0 /* YYButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		75C4DCE31E5AF2F450FB8E312E56B10C /* PBXContainerItemProxy */ = {
+		0ED81FE6F2E234030BEDAE0134914141 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9DC8D9E02903E93BD0B2FEC9D846EA20;
 			remoteInfo = Masonry;
 		};
+		A91ECE53E7F3316BFD56E3DC1624223A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37AB937464510D402C03CF8B47DA153E;
+			remoteInfo = YYButton;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00702C90F72DE5E01AED6708735655F3 /* Pods-YYUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YYUIKit.release.xcconfig"; sourceTree = "<group>"; };
-		043FB94CF93050E20D8E4C071ACFA5D2 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
-		1321572A3ED9C894C94A131BE29B81B2 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
-		22E2395DA2EBCF6241A0DA0E1859FF45 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
-		25CED739CF35B6D0A1D95AE17D712A7F /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		0159E79E4CDAA6DD65B754FEF29AB587 /* YYRectButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYRectButton.h; path = YYButton/YYRectButton.h; sourceTree = "<group>"; };
+		071A84985FA2C58DAE545A69C842C68A /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		09B1B6A9930B98565BC6097635C3D021 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
+		0C9EC870974D130779B3B9723FE0A934 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		11829ECA5BD6C31EEB5AE0757CC7920F /* LeftAndTopButtonController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LeftAndTopButtonController.m; path = YYButton/LeftAndTopButtonController.m; sourceTree = "<group>"; };
+		138420BB0D4C40CBF87F7B187C56D037 /* ImageIsBiggerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ImageIsBiggerController.h; path = YYButton/ImageIsBiggerController.h; sourceTree = "<group>"; };
+		1756E34B74DAC9EC08B79E0AEBFD6C54 /* YYButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYButton.h; path = YYButton/YYButton/YYButton.h; sourceTree = "<group>"; };
+		19B75C941BD3E1FA9A82AACCCF40486B /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		2136008E8179CC571606842D1B20FC5D /* ImageViewUpController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ImageViewUpController.h; path = YYButton/ImageViewUpController.h; sourceTree = "<group>"; };
+		215CFAF592320F0091E09B3B23A10089 /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = main.m; path = YYButton/main.m; sourceTree = "<group>"; };
+		2233AE77CDEA92BEA809429D2E8FADD2 /* YYButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYButton-prefix.pch"; sourceTree = "<group>"; };
+		23800255C97A43131E7C760FB3B909C6 /* ExpandButtonAreaController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpandButtonAreaController.h; path = YYButton/ExpandButtonAreaController.h; sourceTree = "<group>"; };
+		249030746DA65B7B81A63564289ACD62 /* ImageViewDownController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ImageViewDownController.m; path = YYButton/ImageViewDownController.m; sourceTree = "<group>"; };
+		25AA56FF2A547A6A3142182FE2962013 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		26103ED40FD30E2C459618313F434C18 /* ImageViewRightController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ImageViewRightController.m; path = YYButton/ImageViewRightController.m; sourceTree = "<group>"; };
+		274197BF7B61B298C64717584474B2C8 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
 		2ACCE6C499B3BC89CC29C281F0A46559 /* Pods-YYUIKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YYUIKit-acknowledgements.plist"; sourceTree = "<group>"; };
-		2FCC2A09AC3DCD0E4A3D268DAABC5135 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
-		3162AC8E29FA7F3BF0D8641F7F4D9B60 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
-		475326F2A929CD1AFFB74850961F32C0 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		2E1613B7960C4AA9359877316224AAA7 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		2E818CBBFA7E8A109C50D196C71B7DC5 /* BasicViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BasicViewController.m; path = YYButton/BasicViewController.m; sourceTree = "<group>"; };
+		2FE0E3B1552CA48A6A1EE5BEBDCA8C9D /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		335F87A76BF991AEAB341454E1A198F2 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		34ECF8CE14B77877E810156868DC4FDE /* ImageViewUpController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ImageViewUpController.m; path = YYButton/ImageViewUpController.m; sourceTree = "<group>"; };
+		37E5F1C884341DED0C8FC1C33A143352 /* BottomRightButtonController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BottomRightButtonController.h; path = YYButton/BottomRightButtonController.h; sourceTree = "<group>"; };
+		3A9A6892B0E5EDC87E3554657A0FBAE5 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		3E6E1D05A4DF9DE424C20ED36CBE11CA /* YYLayoutButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYLayoutButton.h; path = YYButton/YYLayoutButton.h; sourceTree = "<group>"; };
+		4368AB39D129FAFC8FEA8DC411D4E1ED /* DynamicViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DynamicViewController.m; path = YYButton/DynamicViewController.m; sourceTree = "<group>"; };
+		449000AA45E3B3F541C051ADD48B2F4D /* DynamicViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DynamicViewController.h; path = YYButton/DynamicViewController.h; sourceTree = "<group>"; };
+		46CDF04A945F1D20E29A57E7D643D834 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
 		478575D833C5C1004AA5BB32A7040750 /* Pods-YYUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YYUIKit.debug.xcconfig"; sourceTree = "<group>"; };
+		4D493C9201EA789C5C91D36B4D53D591 /* ViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = YYButton/ViewController.h; sourceTree = "<group>"; };
+		4DFF8BFA23BB6880AC0A0BD9877560B7 /* ExpandButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpandButton.h; path = YYButton/ExpandButton.h; sourceTree = "<group>"; };
+		4E80C5CEBFDDB698E197252EC2D1C48C /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		4ED980DED70ABD908C4AA6E55EAF62FB /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		50F0F1F703210EB9750B4A6DA171E5CB /* Pods-YYUIKit-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YYUIKit-resources.sh"; sourceTree = "<group>"; };
+		527AE316057F5347B8F11EDD95505310 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		52AF69BAA38A17A2DFAF6942EB66133B /* BottomRightButtonController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BottomRightButtonController.m; path = YYButton/BottomRightButtonController.m; sourceTree = "<group>"; };
+		55420234445409EFB2E9073D26D718AD /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		56B251F4567245B4E7F69F5C425705BC /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		59B2D49CFD0D6FCAABA61ABC032F9D30 /* LayoutViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LayoutViewController.h; path = YYButton/LayoutViewController.h; sourceTree = "<group>"; };
+		5A98CFA94DA6127D7BBFC789FB1A3CD7 /* YYLayoutButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYLayoutButton.m; path = YYButton/YYLayoutButton.m; sourceTree = "<group>"; };
+		5ECD6FF437428FDECAAA88E86CD2C7FD /* ExpandButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpandButton.m; path = YYButton/ExpandButton.m; sourceTree = "<group>"; };
+		648282296E3CF24C979EC5F5438C48E0 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		67C2FC6A98F19CA624E1B4DCE88FBEA4 /* FinalViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FinalViewController.m; path = YYButton/FinalViewController.m; sourceTree = "<group>"; };
+		6C9A9BEA8CAAD34F1E29190D27FD15E0 /* YYButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYButton.m; path = YYButton/YYButton/YYButton.m; sourceTree = "<group>"; };
 		6DB75A0A5ED619EAEBDF558AC2A925E6 /* Pods-YYUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YYUIKit-dummy.m"; sourceTree = "<group>"; };
-		780A86CEB0A0131C88BE12414D500734 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
-		7882AB8492CA4F59F730C76CC3BBF57A /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
-		7B5A231E76AF7DC6CB887B5B2C522A7A /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
-		807FFD255E8235D5B42FE078299B5F1B /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
-		8229525E7067F22D3977D2628DF5F2C3 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		82F28AEAAF722BC62BF5B37D6663BBC2 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
-		8A9F610CB90E57B81F8F7DCA2176E0FD /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		8E7E17DB5590A8C4D9625D67E6FBD243 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
-		915A6FF0E04F5A5C0ACDE0E32BD2F193 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		72CDCDBA2FC8A8943C90E846C74068F8 /* AppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = YYButton/AppDelegate.m; sourceTree = "<group>"; };
+		7BC9BAFCC0BEAAEBDB9D6F2688D2C393 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		7EE1ACF707254B645126BB3BE053B7A0 /* LeftAndTopButtonController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LeftAndTopButtonController.h; path = YYButton/LeftAndTopButtonController.h; sourceTree = "<group>"; };
+		85763E07627AFE2C03A0388DFC1640C2 /* AppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = YYButton/AppDelegate.h; sourceTree = "<group>"; };
+		85D3172093B3136795270AB66135A01D /* ImageIsBiggerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ImageIsBiggerController.m; path = YYButton/ImageIsBiggerController.m; sourceTree = "<group>"; };
+		864E299B36C10202CD9981821EF6AFD0 /* RightAndTopButtonController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RightAndTopButtonController.m; path = YYButton/RightAndTopButtonController.m; sourceTree = "<group>"; };
+		86C08A0F81C328281340962D59C151B1 /* ViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = YYButton/ViewController.m; sourceTree = "<group>"; };
+		8A8856A7B3F1B663A5F2DB64B18170F8 /* BasicViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BasicViewController.h; path = YYButton/BasicViewController.h; sourceTree = "<group>"; };
+		8AA87FEB0C1E74DF5B5067A5D3C02EBD /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		8ED340320E3BEECC9C306045151D4874 /* BasicLayoutController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BasicLayoutController.h; path = YYButton/BasicLayoutController.h; sourceTree = "<group>"; };
+		9020FD08828B6594B17C9375A2DA2072 /* libPods-YYUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-YYUIKit.a"; path = "libPods-YYUIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F937BDEB8DF93A08D20C5355C0FDB5C /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
-		A2F75C96947B2651F82FC18F66C43B49 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
-		B179F4D3D34A3CE25A698B8D9AC9D6C2 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		B48867DE203BCF3BB3DFCAB8FDC7516B /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		95F380F54DD0F4CDC77B4416DBBCA379 /* BottomLeftButtonController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BottomLeftButtonController.h; path = YYButton/BottomLeftButtonController.h; sourceTree = "<group>"; };
+		9DA83BA8C749A72F514773A8C398D3EA /* ExpandButtonAreaController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpandButtonAreaController.m; path = YYButton/ExpandButtonAreaController.m; sourceTree = "<group>"; };
+		9DAABD9F4BFB8F6A5ED1722DC975C6E8 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		A417D550091BA43381CCB594E61EAF22 /* RightAndTopButtonController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RightAndTopButtonController.h; path = YYButton/RightAndTopButtonController.h; sourceTree = "<group>"; };
+		A7C0D9BCC24E510672B5F8EE4BD8DBBD /* RectViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RectViewController.m; path = YYButton/RectViewController.m; sourceTree = "<group>"; };
+		AE75F0800E281131A12BC35C892F6998 /* libYYButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYYButton.a; path = libYYButton.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B18B13A5BEB8027881FF1910F23E28E8 /* FinalViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FinalViewController.h; path = YYButton/FinalViewController.h; sourceTree = "<group>"; };
+		B5E5A725CB1B9BC59826F23591B84FC2 /* ImageViewDownController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ImageViewDownController.h; path = YYButton/ImageViewDownController.h; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		BD1053D9C3F3937D63EBBC19EAF5887E /* libPods-YYUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-YYUIKit.a"; path = "libPods-YYUIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C53814EC76712F38E7089D63353D7EFC /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE3A924FBDE4E1FBEC1B6128FB313F1 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		C3D02DE6E1A52E592163B90135A12A54 /* BasicLayoutController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BasicLayoutController.m; path = YYButton/BasicLayoutController.m; sourceTree = "<group>"; };
+		C62CFACB2C46ACB550E6DFBEF3594229 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		C64D240EC4C0576F7E66E8ACD543FE00 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
 		C73DB538112CD81FEED209F93842EB52 /* Pods-YYUIKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YYUIKit-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C762C4F3A304C10AF7EBEA6AAA8508A0 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		C7C02266037F030E22468AC86802DB57 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		C8EDB7D3DD7B00E5AEFA30B5B6EE82CD /* BottomLeftButtonController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BottomLeftButtonController.m; path = YYButton/BottomLeftButtonController.m; sourceTree = "<group>"; };
+		CBC3443E705680511F2E09F905F9EC65 /* YYRectButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYRectButton.m; path = YYButton/YYRectButton.m; sourceTree = "<group>"; };
 		D086E2F037B8D7080E39A9C7FF6101EF /* Pods-YYUIKit-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YYUIKit-frameworks.sh"; sourceTree = "<group>"; };
-		D5EC6EDDDD3E503C5B2E967D3FEECFEB /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E158FC65C5404E098F16E26F478DA504 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		EC0384F145CF471A951BA8E9486AD626 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
-		F8AB44751192F0AA8DA5F75A06138D15 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
-		FA891F8E85C079B4FB101DDD5BC7A477 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
-		FBE23E70FF64ACC81816A368E171B903 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		D995F03836FC051947630DFA4C4EF4ED /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		E5559B2EB84B7DAC381A404DB1CF6AB2 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		EB9FA750B5064439C2E33105C5C6AA1A /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		EED90CC8C4FA8354EA7824ACC3C25552 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		F06716E9208EB747DE5B9F90379696B4 /* RectViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RectViewController.h; path = YYButton/RectViewController.h; sourceTree = "<group>"; };
+		F3B56B6A9EE5B828E8628DD0841E1799 /* LayoutViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LayoutViewController.m; path = YYButton/LayoutViewController.m; sourceTree = "<group>"; };
+		F55CF643D7109E0196DC83EC2C6B1C80 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		F9E562A1DE37AC86628D056E24AB90CF /* YYButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYButton-dummy.m"; sourceTree = "<group>"; };
+		FB66E8E25087100A6D686D73C2468EEB /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		FEE4F8EC306D71D8703655E2669BDB23 /* ImageViewRightController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ImageViewRightController.h; path = YYButton/ImageViewRightController.h; sourceTree = "<group>"; };
+		FEF86CB02BCD88DA5F1109303890E31D /* YYButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYButton.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,51 +201,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB0EB1AAE9426C7183BA5CDF33A2F9FA /* Frameworks */ = {
+		8E6F6AAFE8D24873608D9214FEAB49C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B42705AF769FA7697BEAB1BBB969EC1 /* Foundation.framework in Frameworks */,
+				A1437B974CEA275839A7FE01D5943734 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD9CA0A90430BD8ECC70888D2541895F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7EEB22D025C9DAB019435C1313A99D7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3B9FAC5BAEA75CAB3E20372C4D27D7EE /* Masonry */ = {
-			isa = PBXGroup;
-			children = (
-				475326F2A929CD1AFFB74850961F32C0 /* MASCompositeConstraint.h */,
-				D5EC6EDDDD3E503C5B2E967D3FEECFEB /* MASCompositeConstraint.m */,
-				3162AC8E29FA7F3BF0D8641F7F4D9B60 /* MASConstraint.h */,
-				9F937BDEB8DF93A08D20C5355C0FDB5C /* MASConstraint.m */,
-				22E2395DA2EBCF6241A0DA0E1859FF45 /* MASConstraint+Private.h */,
-				780A86CEB0A0131C88BE12414D500734 /* MASConstraintMaker.h */,
-				F8AB44751192F0AA8DA5F75A06138D15 /* MASConstraintMaker.m */,
-				B48867DE203BCF3BB3DFCAB8FDC7516B /* MASLayoutConstraint.h */,
-				807FFD255E8235D5B42FE078299B5F1B /* MASLayoutConstraint.m */,
-				EC0384F145CF471A951BA8E9486AD626 /* Masonry.h */,
-				1321572A3ED9C894C94A131BE29B81B2 /* MASUtilities.h */,
-				915A6FF0E04F5A5C0ACDE0E32BD2F193 /* MASViewAttribute.h */,
-				82F28AEAAF722BC62BF5B37D6663BBC2 /* MASViewAttribute.m */,
-				043FB94CF93050E20D8E4C071ACFA5D2 /* MASViewConstraint.h */,
-				C7C02266037F030E22468AC86802DB57 /* MASViewConstraint.m */,
-				B179F4D3D34A3CE25A698B8D9AC9D6C2 /* NSArray+MASAdditions.h */,
-				8229525E7067F22D3977D2628DF5F2C3 /* NSArray+MASAdditions.m */,
-				FBE23E70FF64ACC81816A368E171B903 /* NSArray+MASShorthandAdditions.h */,
-				E158FC65C5404E098F16E26F478DA504 /* NSLayoutConstraint+MASDebugAdditions.h */,
-				C762C4F3A304C10AF7EBEA6AAA8508A0 /* NSLayoutConstraint+MASDebugAdditions.m */,
-				8E7E17DB5590A8C4D9625D67E6FBD243 /* View+MASAdditions.h */,
-				2FCC2A09AC3DCD0E4A3D268DAABC5135 /* View+MASAdditions.m */,
-				8A9F610CB90E57B81F8F7DCA2176E0FD /* View+MASShorthandAdditions.h */,
-				FA891F8E85C079B4FB101DDD5BC7A477 /* ViewController+MASAdditions.h */,
-				25CED739CF35B6D0A1D95AE17D712A7F /* ViewController+MASAdditions.m */,
-				4854BD850DB1ADEB02DE483F0C44E016 /* Support Files */,
-			);
-			name = Masonry;
-			path = Masonry;
-			sourceTree = "<group>";
-		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,15 +237,23 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		4854BD850DB1ADEB02DE483F0C44E016 /* Support Files */ = {
+		592AD5A80E96CC9C59F6A44C6C7847ED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7882AB8492CA4F59F730C76CC3BBF57A /* Masonry.xcconfig */,
-				7B5A231E76AF7DC6CB887B5B2C522A7A /* Masonry-dummy.m */,
-				A2F75C96947B2651F82FC18F66C43B49 /* Masonry-prefix.pch */,
+				2FE0E3B1552CA48A6A1EE5BEBDCA8C9D /* libMasonry.a */,
+				9020FD08828B6594B17C9375A2DA2072 /* libPods-YYUIKit.a */,
+				AE75F0800E281131A12BC35C892F6998 /* libYYButton.a */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Masonry";
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E90A8AEF8AC857667F12065583D247C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA2935594C285E5B10BD44EC4B06CA21 /* Masonry */,
+				E45A28E8322C85E30A1618EA0CBF0095 /* YYButton */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -180,10 +261,32 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				E9B49E9D4F6BC02AA78DCF86BCED2145 /* Pods */,
-				D993613F9349FC68CABB068E7B49E575 /* Products */,
+				5E90A8AEF8AC857667F12065583D247C /* Pods */,
+				592AD5A80E96CC9C59F6A44C6C7847ED /* Products */,
 				EFF3B3015073AD1517C6C6DC657F64F0 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		9318937ED5293284F5DEDFB02516325D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				09B1B6A9930B98565BC6097635C3D021 /* Masonry.xcconfig */,
+				8AA87FEB0C1E74DF5B5067A5D3C02EBD /* Masonry-dummy.m */,
+				F55CF643D7109E0196DC83EC2C6B1C80 /* Masonry-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		AB21A824A112615F6E416DB8903ECB01 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEF86CB02BCD88DA5F1109303890E31D /* YYButton.xcconfig */,
+				F9E562A1DE37AC86628D056E24AB90CF /* YYButton-dummy.m */,
+				2233AE77CDEA92BEA809429D2E8FADD2 /* YYButton-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YYButton";
 			sourceTree = "<group>";
 		};
 		C4A80954CB00F5E24CF49607AA5FCA6F /* Pods-YYUIKit */ = {
@@ -201,21 +304,90 @@
 			path = "Target Support Files/Pods-YYUIKit";
 			sourceTree = "<group>";
 		};
-		D993613F9349FC68CABB068E7B49E575 /* Products */ = {
+		CA2935594C285E5B10BD44EC4B06CA21 /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
-				C53814EC76712F38E7089D63353D7EFC /* libMasonry.a */,
-				BD1053D9C3F3937D63EBBC19EAF5887E /* libPods-YYUIKit.a */,
+				335F87A76BF991AEAB341454E1A198F2 /* MASCompositeConstraint.h */,
+				46CDF04A945F1D20E29A57E7D643D834 /* MASCompositeConstraint.m */,
+				19B75C941BD3E1FA9A82AACCCF40486B /* MASConstraint.h */,
+				25AA56FF2A547A6A3142182FE2962013 /* MASConstraint.m */,
+				EB9FA750B5064439C2E33105C5C6AA1A /* MASConstraint+Private.h */,
+				3A9A6892B0E5EDC87E3554657A0FBAE5 /* MASConstraintMaker.h */,
+				D995F03836FC051947630DFA4C4EF4ED /* MASConstraintMaker.m */,
+				9DAABD9F4BFB8F6A5ED1722DC975C6E8 /* MASLayoutConstraint.h */,
+				2E1613B7960C4AA9359877316224AAA7 /* MASLayoutConstraint.m */,
+				55420234445409EFB2E9073D26D718AD /* Masonry.h */,
+				EED90CC8C4FA8354EA7824ACC3C25552 /* MASUtilities.h */,
+				56B251F4567245B4E7F69F5C425705BC /* MASViewAttribute.h */,
+				C64D240EC4C0576F7E66E8ACD543FE00 /* MASViewAttribute.m */,
+				0C9EC870974D130779B3B9723FE0A934 /* MASViewConstraint.h */,
+				BAE3A924FBDE4E1FBEC1B6128FB313F1 /* MASViewConstraint.m */,
+				E5559B2EB84B7DAC381A404DB1CF6AB2 /* NSArray+MASAdditions.h */,
+				274197BF7B61B298C64717584474B2C8 /* NSArray+MASAdditions.m */,
+				4ED980DED70ABD908C4AA6E55EAF62FB /* NSArray+MASShorthandAdditions.h */,
+				648282296E3CF24C979EC5F5438C48E0 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				527AE316057F5347B8F11EDD95505310 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				C62CFACB2C46ACB550E6DFBEF3594229 /* View+MASAdditions.h */,
+				FB66E8E25087100A6D686D73C2468EEB /* View+MASAdditions.m */,
+				7BC9BAFCC0BEAAEBDB9D6F2688D2C393 /* View+MASShorthandAdditions.h */,
+				071A84985FA2C58DAE545A69C842C68A /* ViewController+MASAdditions.h */,
+				4E80C5CEBFDDB698E197252EC2D1C48C /* ViewController+MASAdditions.m */,
+				9318937ED5293284F5DEDFB02516325D /* Support Files */,
 			);
-			name = Products;
+			name = Masonry;
+			path = Masonry;
 			sourceTree = "<group>";
 		};
-		E9B49E9D4F6BC02AA78DCF86BCED2145 /* Pods */ = {
+		E45A28E8322C85E30A1618EA0CBF0095 /* YYButton */ = {
 			isa = PBXGroup;
 			children = (
-				3B9FAC5BAEA75CAB3E20372C4D27D7EE /* Masonry */,
+				85763E07627AFE2C03A0388DFC1640C2 /* AppDelegate.h */,
+				72CDCDBA2FC8A8943C90E846C74068F8 /* AppDelegate.m */,
+				8ED340320E3BEECC9C306045151D4874 /* BasicLayoutController.h */,
+				C3D02DE6E1A52E592163B90135A12A54 /* BasicLayoutController.m */,
+				8A8856A7B3F1B663A5F2DB64B18170F8 /* BasicViewController.h */,
+				2E818CBBFA7E8A109C50D196C71B7DC5 /* BasicViewController.m */,
+				95F380F54DD0F4CDC77B4416DBBCA379 /* BottomLeftButtonController.h */,
+				C8EDB7D3DD7B00E5AEFA30B5B6EE82CD /* BottomLeftButtonController.m */,
+				37E5F1C884341DED0C8FC1C33A143352 /* BottomRightButtonController.h */,
+				52AF69BAA38A17A2DFAF6942EB66133B /* BottomRightButtonController.m */,
+				449000AA45E3B3F541C051ADD48B2F4D /* DynamicViewController.h */,
+				4368AB39D129FAFC8FEA8DC411D4E1ED /* DynamicViewController.m */,
+				4DFF8BFA23BB6880AC0A0BD9877560B7 /* ExpandButton.h */,
+				5ECD6FF437428FDECAAA88E86CD2C7FD /* ExpandButton.m */,
+				23800255C97A43131E7C760FB3B909C6 /* ExpandButtonAreaController.h */,
+				9DA83BA8C749A72F514773A8C398D3EA /* ExpandButtonAreaController.m */,
+				B18B13A5BEB8027881FF1910F23E28E8 /* FinalViewController.h */,
+				67C2FC6A98F19CA624E1B4DCE88FBEA4 /* FinalViewController.m */,
+				138420BB0D4C40CBF87F7B187C56D037 /* ImageIsBiggerController.h */,
+				85D3172093B3136795270AB66135A01D /* ImageIsBiggerController.m */,
+				B5E5A725CB1B9BC59826F23591B84FC2 /* ImageViewDownController.h */,
+				249030746DA65B7B81A63564289ACD62 /* ImageViewDownController.m */,
+				FEE4F8EC306D71D8703655E2669BDB23 /* ImageViewRightController.h */,
+				26103ED40FD30E2C459618313F434C18 /* ImageViewRightController.m */,
+				2136008E8179CC571606842D1B20FC5D /* ImageViewUpController.h */,
+				34ECF8CE14B77877E810156868DC4FDE /* ImageViewUpController.m */,
+				59B2D49CFD0D6FCAABA61ABC032F9D30 /* LayoutViewController.h */,
+				F3B56B6A9EE5B828E8628DD0841E1799 /* LayoutViewController.m */,
+				7EE1ACF707254B645126BB3BE053B7A0 /* LeftAndTopButtonController.h */,
+				11829ECA5BD6C31EEB5AE0757CC7920F /* LeftAndTopButtonController.m */,
+				215CFAF592320F0091E09B3B23A10089 /* main.m */,
+				F06716E9208EB747DE5B9F90379696B4 /* RectViewController.h */,
+				A7C0D9BCC24E510672B5F8EE4BD8DBBD /* RectViewController.m */,
+				A417D550091BA43381CCB594E61EAF22 /* RightAndTopButtonController.h */,
+				864E299B36C10202CD9981821EF6AFD0 /* RightAndTopButtonController.m */,
+				4D493C9201EA789C5C91D36B4D53D591 /* ViewController.h */,
+				86C08A0F81C328281340962D59C151B1 /* ViewController.m */,
+				1756E34B74DAC9EC08B79E0AEBFD6C54 /* YYButton.h */,
+				6C9A9BEA8CAAD34F1E29190D27FD15E0 /* YYButton.m */,
+				3E6E1D05A4DF9DE424C20ED36CBE11CA /* YYLayoutButton.h */,
+				5A98CFA94DA6127D7BBFC789FB1A3CD7 /* YYLayoutButton.m */,
+				0159E79E4CDAA6DD65B754FEF29AB587 /* YYRectButton.h */,
+				CBC3443E705680511F2E09F905F9EC65 /* YYRectButton.m */,
+				AB21A824A112615F6E416DB8903ECB01 /* Support Files */,
 			);
-			name = Pods;
+			name = YYButton;
+			path = YYButton;
 			sourceTree = "<group>";
 		};
 		EFF3B3015073AD1517C6C6DC657F64F0 /* Targets Support Files */ = {
@@ -229,6 +401,34 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		65DE748C4CD8FC6382D60995EF80501D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				599C5DAA618DA5E6BEE43FF5DCA46BBC /* AppDelegate.h in Headers */,
+				12373C9E4E5CED4124EC177CC28B7FE0 /* BasicLayoutController.h in Headers */,
+				AD73C7379BA9E228CC186D45DF45D387 /* BasicViewController.h in Headers */,
+				8A7AA52C52DA84BAB30111A4179F82ED /* BottomLeftButtonController.h in Headers */,
+				F31AC3D64EB70A5C2CD6DA5A7FC5E813 /* BottomRightButtonController.h in Headers */,
+				0A10070920AAAAF1C64DFB4DFE3854FF /* DynamicViewController.h in Headers */,
+				A60411E2D8EDB036306843E1E3D2DD5B /* ExpandButton.h in Headers */,
+				9B2B34C045C1679E18B0DAC22193519C /* ExpandButtonAreaController.h in Headers */,
+				2D6F3EEAE57854523B3E51330932E436 /* FinalViewController.h in Headers */,
+				7916DA6288CEE279BAD5F750F182A8DB /* ImageIsBiggerController.h in Headers */,
+				52E8E5BFD9E1F40249FE9B844F26E434 /* ImageViewDownController.h in Headers */,
+				9BA48ED81BA4491765E72B5472E0DDE3 /* ImageViewRightController.h in Headers */,
+				FA5FF0978D338D304C042874A28FB2BC /* ImageViewUpController.h in Headers */,
+				290ABDAD10087EF3538F24FDE7B6DA1F /* LayoutViewController.h in Headers */,
+				770C7CC80E20A89DF33AC93058ABECDB /* LeftAndTopButtonController.h in Headers */,
+				20F3342DD1B1F255A65A14C54F29008E /* RectViewController.h in Headers */,
+				A215759B5D2444BB29E8CAB9A6D4D1A7 /* RightAndTopButtonController.h in Headers */,
+				9888950F74C3A417FF9D3A135AA64D53 /* ViewController.h in Headers */,
+				8039A4E726BDB10801AFA58F7FB5FBD8 /* YYButton.h in Headers */,
+				50E06C20F46159735E4182CE79AC16F9 /* YYLayoutButton.h in Headers */,
+				540913E63F67E6E5F60A5E845D5E2D80 /* YYRectButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BDF73468622762862D2FB76ED4AC0D8E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -254,6 +454,41 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		37AB937464510D402C03CF8B47DA153E /* YYButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6107A1F6164B566DA6579AFF705B91B7 /* Build configuration list for PBXNativeTarget "YYButton" */;
+			buildPhases = (
+				D5DFEA0684F5B65E241CF33EE15D2C2E /* Sources */,
+				AD9CA0A90430BD8ECC70888D2541895F /* Frameworks */,
+				65DE748C4CD8FC6382D60995EF80501D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YYButton;
+			productName = YYButton;
+			productReference = AE75F0800E281131A12BC35C892F6998 /* libYYButton.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		67A65ACF3127BE0EAC5DB7D35835A147 /* Pods-YYUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5692D04DBF338276121CBEE0B01A126 /* Build configuration list for PBXNativeTarget "Pods-YYUIKit" */;
+			buildPhases = (
+				50AE18C9F1F321EF1EE2B9426E4D9D17 /* Sources */,
+				8E6F6AAFE8D24873608D9214FEAB49C6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8786898E6F68F8A3CE26D2267D257956 /* PBXTargetDependency */,
+				9C5DB1CD774D67D277FB9D04C25809F1 /* PBXTargetDependency */,
+			);
+			name = "Pods-YYUIKit";
+			productName = "Pods-YYUIKit";
+			productReference = 9020FD08828B6594B17C9375A2DA2072 /* libPods-YYUIKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34CAE1CB89EDBF2E53735CC5D4E5E69F /* Build configuration list for PBXNativeTarget "Masonry" */;
@@ -268,24 +503,7 @@
 			);
 			name = Masonry;
 			productName = Masonry;
-			productReference = C53814EC76712F38E7089D63353D7EFC /* libMasonry.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		DAEDDFE3F424C351035C3D8949CA740C /* Pods-YYUIKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ABA4C85EA10CEE6F3D8A37F5AA8A281B /* Build configuration list for PBXNativeTarget "Pods-YYUIKit" */;
-			buildPhases = (
-				5126BD3E4CA889193DA1AF6566E0BD07 /* Sources */,
-				BB0EB1AAE9426C7183BA5CDF33A2F9FA /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				39E3D6F6A6D3ED1C7D2D243825D36005 /* PBXTargetDependency */,
-			);
-			name = "Pods-YYUIKit";
-			productName = "Pods-YYUIKit";
-			productReference = BD1053D9C3F3937D63EBBC19EAF5887E /* libPods-YYUIKit.a */;
+			productReference = 2FE0E3B1552CA48A6A1EE5BEBDCA8C9D /* libMasonry.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -305,22 +523,23 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = D993613F9349FC68CABB068E7B49E575 /* Products */;
+			productRefGroup = 592AD5A80E96CC9C59F6A44C6C7847ED /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */,
-				DAEDDFE3F424C351035C3D8949CA740C /* Pods-YYUIKit */,
+				67A65ACF3127BE0EAC5DB7D35835A147 /* Pods-YYUIKit */,
+				37AB937464510D402C03CF8B47DA153E /* YYButton */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5126BD3E4CA889193DA1AF6566E0BD07 /* Sources */ = {
+		50AE18C9F1F321EF1EE2B9426E4D9D17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28287B92B5FC46907F1F830A6C44BA28 /* Pods-YYUIKit-dummy.m in Sources */,
+				366A2D7CCB0F5BE3489F214C6E5B38B7 /* Pods-YYUIKit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,14 +561,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5DFEA0684F5B65E241CF33EE15D2C2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3D12FB71A7B112E7B4EA39D08CFE917 /* AppDelegate.m in Sources */,
+				7BC7A8DBBE54CFF8B8027C47ACD92E5F /* BasicLayoutController.m in Sources */,
+				070725B55A36B0E97F2FB7DDB8E02E96 /* BasicViewController.m in Sources */,
+				90673D510BA7957539B8A773C3E764DF /* BottomLeftButtonController.m in Sources */,
+				D68093605D31843EF2498D3D643940FE /* BottomRightButtonController.m in Sources */,
+				A9CC3164CB364E6D2BCFF2A0A3782DD2 /* DynamicViewController.m in Sources */,
+				AA399510E6E1BED56DD60C43511F7297 /* ExpandButton.m in Sources */,
+				4892902731975CF76B284BEC12039A6B /* ExpandButtonAreaController.m in Sources */,
+				181B5934467E83DA3B35C288AF235742 /* FinalViewController.m in Sources */,
+				D67F2062BD5606546109258272CBC9C1 /* ImageIsBiggerController.m in Sources */,
+				B4DAC48F057724DBC25EFBA0B12E4950 /* ImageViewDownController.m in Sources */,
+				22A8C461057724D29D9424896CECB941 /* ImageViewRightController.m in Sources */,
+				270561B056E57DC4AB5337A143F87930 /* ImageViewUpController.m in Sources */,
+				E842047286256E21D76C3A04FD8EA23E /* LayoutViewController.m in Sources */,
+				747F1590814617D0D73826FC4C44F754 /* LeftAndTopButtonController.m in Sources */,
+				E1184403C4AF6E046D179F97E4E985BF /* main.m in Sources */,
+				8A95C10A4D74F3FD3CDB2F8C39848036 /* RectViewController.m in Sources */,
+				B76ECA3CA47DA7AFE1AD230915BD653E /* RightAndTopButtonController.m in Sources */,
+				74FB1A3593D0931AD0DF4544DA66102D /* ViewController.m in Sources */,
+				3BB40CF61531CECD144D2EEEB305A066 /* YYButton-dummy.m in Sources */,
+				FF2C784B1DB3993853852A261F0C290E /* YYButton.m in Sources */,
+				57AFBAB89C3AC1C9A54E041F84BDF76F /* YYLayoutButton.m in Sources */,
+				ACA8DB24E6944E0CFBB43274316ECCE2 /* YYRectButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		39E3D6F6A6D3ED1C7D2D243825D36005 /* PBXTargetDependency */ = {
+		8786898E6F68F8A3CE26D2267D257956 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Masonry;
 			target = 9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */;
-			targetProxy = 75C4DCE31E5AF2F450FB8E312E56B10C /* PBXContainerItemProxy */;
+			targetProxy = 0ED81FE6F2E234030BEDAE0134914141 /* PBXContainerItemProxy */;
+		};
+		9C5DB1CD774D67D277FB9D04C25809F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YYButton;
+			target = 37AB937464510D402C03CF8B47DA153E /* YYButton */;
+			targetProxy = A91ECE53E7F3316BFD56E3DC1624223A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -419,7 +674,7 @@
 		};
 		6033A2127E806DD5C86A515742F7445E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7882AB8492CA4F59F730C76CC3BBF57A /* Masonry.xcconfig */;
+			baseConfigurationReference = 09B1B6A9930B98565BC6097635C3D021 /* Masonry.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -442,7 +697,7 @@
 		};
 		6681B1A324732F8264BB932595DFA69B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7882AB8492CA4F59F730C76CC3BBF57A /* Masonry.xcconfig */;
+			baseConfigurationReference = 09B1B6A9930B98565BC6097635C3D021 /* Masonry.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -464,7 +719,52 @@
 			};
 			name = Release;
 		};
-		79A3AE1BB887145704A7E0C851B5D987 /* Debug */ = {
+		A395D81A9DFAE3C2E27BD53B4486220C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEF86CB02BCD88DA5F1109303890E31D /* YYButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/YYButton/YYButton-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = YYButton;
+				PRODUCT_NAME = YYButton;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBBFC0C471BB5D7BAFB907C22C8B1148 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00702C90F72DE5E01AED6708735655F3 /* Pods-YYUIKit.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE19B4B34FE7894461E7B2D4FC207745 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 478575D833C5C1004AA5BB32A7040750 /* Pods-YYUIKit.debug.xcconfig */;
 			buildSettings = {
@@ -485,23 +785,25 @@
 			};
 			name = Debug;
 		};
-		ADB55B55EAB0634A5CC82299A387E3A0 /* Release */ = {
+		FD6D9530BA6AC40FA33D822D4AEC2407 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00702C90F72DE5E01AED6708735655F3 /* Pods-YYUIKit.release.xcconfig */;
+			baseConfigurationReference = FEF86CB02BCD88DA5F1109303890E31D /* YYButton.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
+				GCC_PREFIX_HEADER = "Target Support Files/YYButton/YYButton-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = YYButton;
+				PRODUCT_NAME = YYButton;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -586,11 +888,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ABA4C85EA10CEE6F3D8A37F5AA8A281B /* Build configuration list for PBXNativeTarget "Pods-YYUIKit" */ = {
+		6107A1F6164B566DA6579AFF705B91B7 /* Build configuration list for PBXNativeTarget "YYButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				79A3AE1BB887145704A7E0C851B5D987 /* Debug */,
-				ADB55B55EAB0634A5CC82299A387E3A0 /* Release */,
+				A395D81A9DFAE3C2E27BD53B4486220C /* Debug */,
+				FD6D9530BA6AC40FA33D822D4AEC2407 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5692D04DBF338276121CBEE0B01A126 /* Build configuration list for PBXNativeTarget "Pods-YYUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE19B4B34FE7894461E7B2D4FC207745 /* Debug */,
+				BBBFC0C471BB5D7BAFB907C22C8B1148 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
