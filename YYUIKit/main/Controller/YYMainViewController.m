@@ -79,6 +79,8 @@
 
         _dataSoure = [[NSMutableArray alloc]initWithObjects:
                       @"数组排序",
+                      @"Label相关",
+                      @"UITextField相关",
                       @"UITableView分组",
                       @"UICollectionView分组",
                       @"UITableView嵌套",
@@ -93,6 +95,8 @@
     {
         _controllerSoure = [[NSMutableArray alloc] initWithObjects:
                             @"YYArraySortViewController",
+                            @"YYLabelViewController",
+                            @"YYTextFieldViewController",
                             @"YYTableViewController",
                             @"YYCollectionViewController",
                             @"YYNestingTableViewController",

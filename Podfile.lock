@@ -1,20 +1,24 @@
 PODS:
   - Masonry (1.1.0)
+  - ReactiveObjC (3.1.0)
   - YYButton (0.0.9)
 
 DEPENDENCIES:
   - Masonry
+  - ReactiveObjC
   - YYButton
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Masonry
+    - ReactiveObjC
     - YYButton
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
   YYButton: 0c906d8a51001efa3790df5a4ffcb2898c112244
 
-PODFILE CHECKSUM: ead25d923c8ce023deb0986fb1776cf2891845ed
+PODFILE CHECKSUM: 56abddfea61045561894789cabd415f3c1a0fae7
 
 COCOAPODS: 1.5.3
