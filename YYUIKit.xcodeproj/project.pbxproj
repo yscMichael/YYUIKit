@@ -10,6 +10,7 @@
 		110B4407219C0AD10008B65C /* YYTableViewLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110B4406219C0AD10008B65C /* YYTableViewLayoutController.m */; };
 		110B440C219C0B190008B65C /* YYLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 110B440A219C0B190008B65C /* YYLayoutCell.m */; };
 		110B440D219C0B190008B65C /* YYLayoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110B440B219C0B190008B65C /* YYLayoutCell.xib */; };
+		110B4415219C18F00008B65C /* YYLayoutModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 110B4414219C18F00008B65C /* YYLayoutModel.m */; };
 		112916142146120700B27CF0 /* YYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112916132146120700B27CF0 /* YYTableViewController.m */; };
 		112916172146122100B27CF0 /* YYCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112916162146122100B27CF0 /* YYCollectionViewController.m */; };
 		1129161D214613D800B27CF0 /* YYMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1129161B214613D800B27CF0 /* YYMainTableViewCell.m */; };
@@ -68,6 +69,9 @@
 		110B4409219C0B190008B65C /* YYLayoutCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYLayoutCell.h; sourceTree = "<group>"; };
 		110B440A219C0B190008B65C /* YYLayoutCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYLayoutCell.m; sourceTree = "<group>"; };
 		110B440B219C0B190008B65C /* YYLayoutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYLayoutCell.xib; sourceTree = "<group>"; };
+		110B440E219C0CA90008B65C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		110B4413219C18F00008B65C /* YYLayoutModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYLayoutModel.h; sourceTree = "<group>"; };
+		110B4414219C18F00008B65C /* YYLayoutModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYLayoutModel.m; sourceTree = "<group>"; };
 		112916122146120700B27CF0 /* YYTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTableViewController.h; sourceTree = "<group>"; };
 		112916132146120700B27CF0 /* YYTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTableViewController.m; sourceTree = "<group>"; };
 		112916152146122100B27CF0 /* YYCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCollectionViewController.h; sourceTree = "<group>"; };
@@ -159,7 +163,10 @@
 			isa = PBXGroup;
 			children = (
 				110B4404219C0A990008B65C /* Controller */,
+				110B4405219C0AD10008B65C /* YYTableViewLayoutController.h */,
+				110B4406219C0AD10008B65C /* YYTableViewLayoutController.m */,
 				110B4408219C0AF90008B65C /* View */,
+				110B440F219C15BB0008B65C /* Model */,
 			);
 			path = "tableViewCell自动布局";
 			sourceTree = "<group>";
@@ -167,8 +174,6 @@
 		110B4404219C0A990008B65C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				110B4405219C0AD10008B65C /* YYTableViewLayoutController.h */,
-				110B4406219C0AD10008B65C /* YYTableViewLayoutController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,6 +186,15 @@
 				110B440B219C0B190008B65C /* YYLayoutCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		110B440F219C15BB0008B65C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				110B4413219C18F00008B65C /* YYLayoutModel.h */,
+				110B4414219C18F00008B65C /* YYLayoutModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		112916112146119B00B27CF0 /* UITableView分组 */ = {
@@ -454,6 +468,7 @@
 		11DA89C4213BA12000F57154 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				110B440E219C0CA90008B65C /* PrefixHeader.pch */,
 				119695BE213B9B60006035D4 /* Info.plist */,
 				119695BF213B9B60006035D4 /* main.m */,
 				119695B6213B9B5F006035D4 /* Main.storyboard */,
@@ -651,6 +666,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				119695B5213B9B5F006035D4 /* YYMainViewController.m in Sources */,
+				110B4415219C18F00008B65C /* YYLayoutModel.m in Sources */,
 				1163FA5D21476D3E00809A0D /* YYNoDataView.m in Sources */,
 				11A095A221533E540065DE6F /* YYNestingSmallCell.m in Sources */,
 				110B440C219C0B190008B65C /* YYLayoutCell.m in Sources */,
@@ -842,6 +858,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59PVTAC458;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YYUIKit/other/PrefixHeader.pch";
 				INFOPLIST_FILE = YYUIKit/other/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -861,6 +879,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59PVTAC458;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YYUIKit/other/PrefixHeader.pch";
 				INFOPLIST_FILE = YYUIKit/other/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (

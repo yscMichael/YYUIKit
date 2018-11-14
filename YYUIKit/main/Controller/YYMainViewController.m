@@ -82,6 +82,7 @@
                       @"Label相关",
                       @"UITextField相关",
                       @"UITableView分组",
+                      @"tableView自动布局",
                       @"UICollectionView分组",
                       @"UITableView嵌套",
                       @"UIDatePicker时间选择器",nil];
@@ -98,6 +99,7 @@
                             @"YYLabelViewController",
                             @"YYTextFieldViewController",
                             @"YYTableViewController",
+                            @"YYTableViewLayoutController",
                             @"YYCollectionViewController",
                             @"YYNestingTableViewController",
                             @"YYDatePickerController",nil];
