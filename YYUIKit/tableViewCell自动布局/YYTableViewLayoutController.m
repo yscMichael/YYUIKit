@@ -58,9 +58,17 @@ static float tableViewEstimatedRowHeight = 80.0;
     modelThree.unitString = @"盒-我哒哒哒哒哒哒哒哒哒哒哒哒";
     modelThree.priceString = @"130元";
 
+    YYLayoutModel *modelFour = [[YYLayoutModel alloc] init];
+    modelFour.key_name = @"3.头孢克洛胶囊(10粒/盒）";
+    modelFour.factoryString = @"香港澳美制药";
+    modelFour.countString = @"3";
+    modelFour.unitString = @"盒";
+    modelFour.priceString = @"130元130元130元130元130元130元130元130元130元130元130元130元130元130元130元130元130元130元130元130元130元130元130元130元130元130元130元130元130元130元130元130元130元130元130元130元";
+
     [self.dataSoure addObject:modelOne];
     [self.dataSoure addObject:modelTwo];
     [self.dataSoure addObject:modelThree];
+    [self.dataSoure addObject:modelFour];
 }
 
 #pragma mark - UITableViewDataSource
