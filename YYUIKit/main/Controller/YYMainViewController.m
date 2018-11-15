@@ -85,6 +85,8 @@
                       @"tableView自动布局",
                       @"UICollectionView分组",
                       @"UITableView嵌套",
+                      @"TableView分组(单个cell)",
+                      @"TableView分组(多个cell)",
                       @"UIDatePicker时间选择器",nil];
     }
     return _dataSoure;
@@ -102,6 +104,8 @@
                             @"YYTableViewLayoutController",
                             @"YYCollectionViewController",
                             @"YYNestingTableViewController",
+                            @"YYTableViewSectionSingleController",
+                            @"YYTableViewSectionManyController",
                             @"YYDatePickerController",nil];
     }
     return _controllerSoure;

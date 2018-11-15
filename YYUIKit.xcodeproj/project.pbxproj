@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1105DF94219D3FBF00A81EA9 /* YYTableViewSectionSingleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1105DF93219D3FBF00A81EA9 /* YYTableViewSectionSingleController.m */; };
+		1105DF97219D3FCF00A81EA9 /* YYTableViewSectionManyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1105DF96219D3FCF00A81EA9 /* YYTableViewSectionManyController.m */; };
+		1105DF9B219D40A600A81EA9 /* YYTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1105DF98219D40A600A81EA9 /* YYTestCell.m */; };
+		1105DF9C219D40A600A81EA9 /* YYTestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1105DF99219D40A600A81EA9 /* YYTestCell.xib */; };
+		1105DFA0219D40C600A81EA9 /* YYTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1105DF9F219D40C600A81EA9 /* YYTestModel.m */; };
 		110B4407219C0AD10008B65C /* YYTableViewLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110B4406219C0AD10008B65C /* YYTableViewLayoutController.m */; };
 		110B440C219C0B190008B65C /* YYLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 110B440A219C0B190008B65C /* YYLayoutCell.m */; };
 		110B440D219C0B190008B65C /* YYLayoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110B440B219C0B190008B65C /* YYLayoutCell.xib */; };
@@ -64,6 +69,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1105DF92219D3FBF00A81EA9 /* YYTableViewSectionSingleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTableViewSectionSingleController.h; sourceTree = "<group>"; };
+		1105DF93219D3FBF00A81EA9 /* YYTableViewSectionSingleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTableViewSectionSingleController.m; sourceTree = "<group>"; };
+		1105DF95219D3FCF00A81EA9 /* YYTableViewSectionManyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTableViewSectionManyController.h; sourceTree = "<group>"; };
+		1105DF96219D3FCF00A81EA9 /* YYTableViewSectionManyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTableViewSectionManyController.m; sourceTree = "<group>"; };
+		1105DF98219D40A600A81EA9 /* YYTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTestCell.m; sourceTree = "<group>"; };
+		1105DF99219D40A600A81EA9 /* YYTestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYTestCell.xib; sourceTree = "<group>"; };
+		1105DF9A219D40A600A81EA9 /* YYTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTestCell.h; sourceTree = "<group>"; };
+		1105DF9E219D40C600A81EA9 /* YYTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTestModel.h; sourceTree = "<group>"; };
+		1105DF9F219D40C600A81EA9 /* YYTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTestModel.m; sourceTree = "<group>"; };
 		110B4405219C0AD10008B65C /* YYTableViewLayoutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTableViewLayoutController.h; sourceTree = "<group>"; };
 		110B4406219C0AD10008B65C /* YYTableViewLayoutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTableViewLayoutController.m; sourceTree = "<group>"; };
 		110B4409219C0B190008B65C /* YYLayoutCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYLayoutCell.h; sourceTree = "<group>"; };
@@ -159,6 +173,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1105DF8C219D3EBB00A81EA9 /* tableView分组(单个cell) */ = {
+			isa = PBXGroup;
+			children = (
+				1105DF8E219D3EEB00A81EA9 /* Controller */,
+				1105DF92219D3FBF00A81EA9 /* YYTableViewSectionSingleController.h */,
+				1105DF93219D3FBF00A81EA9 /* YYTableViewSectionSingleController.m */,
+				1105DF90219D3EFE00A81EA9 /* View */,
+				1105DF9D219D40B300A81EA9 /* Model */,
+			);
+			path = "tableView分组(单个cell)";
+			sourceTree = "<group>";
+		};
+		1105DF8D219D3ED200A81EA9 /* tableView分组(多个cell) */ = {
+			isa = PBXGroup;
+			children = (
+				1105DF8F219D3EF600A81EA9 /* Controller */,
+				1105DF91219D3F0200A81EA9 /* View */,
+			);
+			path = "tableView分组(多个cell)";
+			sourceTree = "<group>";
+		};
+		1105DF8E219D3EEB00A81EA9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1105DF8F219D3EF600A81EA9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1105DF95219D3FCF00A81EA9 /* YYTableViewSectionManyController.h */,
+				1105DF96219D3FCF00A81EA9 /* YYTableViewSectionManyController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1105DF90219D3EFE00A81EA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1105DF9A219D40A600A81EA9 /* YYTestCell.h */,
+				1105DF98219D40A600A81EA9 /* YYTestCell.m */,
+				1105DF99219D40A600A81EA9 /* YYTestCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1105DF91219D3F0200A81EA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1105DF9D219D40B300A81EA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1105DF9E219D40C600A81EA9 /* YYTestModel.h */,
+				1105DF9F219D40C600A81EA9 /* YYTestModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		110B4403219C0A790008B65C /* tableViewCell自动布局 */ = {
 			isa = PBXGroup;
 			children = (
@@ -373,7 +450,9 @@
 				112916112146119B00B27CF0 /* UITableView分组 */,
 				110B4403219C0A790008B65C /* tableViewCell自动布局 */,
 				11DA89C5213BA39C00F57154 /* UICollectionView分组 */,
-				11A0959421533C7E0065DE6F /* UITableView嵌套tableView */,
+				11A0959421533C7E0065DE6F /* UITableView嵌套tableView(分组) */,
+				1105DF8C219D3EBB00A81EA9 /* tableView分组(单个cell) */,
+				1105DF8D219D3ED200A81EA9 /* tableView分组(多个cell) */,
 				116A1AB2215CC8A0007238B8 /* UIDatePicker */,
 				11DA89C4213BA12000F57154 /* other */,
 			);
@@ -416,13 +495,13 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		11A0959421533C7E0065DE6F /* UITableView嵌套tableView */ = {
+		11A0959421533C7E0065DE6F /* UITableView嵌套tableView(分组) */ = {
 			isa = PBXGroup;
 			children = (
 				11A0959821533CFE0065DE6F /* Controller */,
 				11A0959921533D5C0065DE6F /* View */,
 			);
-			path = "UITableView嵌套tableView";
+			path = "UITableView嵌套tableView(分组)";
 			sourceTree = "<group>";
 		};
 		11A0959821533CFE0065DE6F /* Controller */ = {
@@ -616,6 +695,7 @@
 				119DB60521902FE500441B3B /* YYTextFieldViewController.xib in Resources */,
 				11291626214615D800B27CF0 /* YYFootView.xib in Resources */,
 				1163FA5F21476D4C00809A0D /* YYNoDataView.xib in Resources */,
+				1105DF9C219D40A600A81EA9 /* YYTestCell.xib in Resources */,
 				119695B8213B9B5F006035D4 /* Main.storyboard in Resources */,
 				110B440D219C0B190008B65C /* YYLayoutCell.xib in Resources */,
 				11A0959E21533D790065DE6F /* YYNestingCell.xib in Resources */,
@@ -672,14 +752,18 @@
 				110B440C219C0B190008B65C /* YYLayoutCell.m in Sources */,
 				110B4407219C0AD10008B65C /* YYTableViewLayoutController.m in Sources */,
 				116A1AB5215CC8CE007238B8 /* YYDatePickerController.m in Sources */,
+				1105DF9B219D40A600A81EA9 /* YYTestCell.m in Sources */,
 				119DB60421902FE500441B3B /* YYTextFieldViewController.m in Sources */,
+				1105DFA0219D40C600A81EA9 /* YYTestModel.m in Sources */,
 				1129162C214615DE00B27CF0 /* YYTableViewCell.m in Sources */,
 				116541FB21887D7000327303 /* YYLabelViewController.m in Sources */,
 				119695C0213B9B60006035D4 /* main.m in Sources */,
 				112916172146122100B27CF0 /* YYCollectionViewController.m in Sources */,
 				119695B2213B9B5F006035D4 /* YYAppDelegate.m in Sources */,
 				11A0959D21533D790065DE6F /* YYNestingCell.m in Sources */,
+				1105DF94219D3FBF00A81EA9 /* YYTableViewSectionSingleController.m in Sources */,
 				1129161D214613D800B27CF0 /* YYMainTableViewCell.m in Sources */,
+				1105DF97219D3FCF00A81EA9 /* YYTableViewSectionManyController.m in Sources */,
 				112916142146120700B27CF0 /* YYTableViewController.m in Sources */,
 				11291631214615EA00B27CF0 /* YYDrugModel.m in Sources */,
 				112916372146512400B27CF0 /* YYCollectionViewCell.m in Sources */,
