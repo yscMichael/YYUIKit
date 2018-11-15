@@ -13,4 +13,6 @@
 @property (nonatomic,assign) int groupNo;
 //名字
 @property (nonatomic ,copy) NSString *key_name;
+//数组
+@property (nonatomic,strong) NSMutableArray *dataSource;
 @end

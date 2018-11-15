@@ -12,6 +12,12 @@
 		1105DF9B219D40A600A81EA9 /* YYTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1105DF98219D40A600A81EA9 /* YYTestCell.m */; };
 		1105DF9C219D40A600A81EA9 /* YYTestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1105DF99219D40A600A81EA9 /* YYTestCell.xib */; };
 		1105DFA0219D40C600A81EA9 /* YYTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1105DF9F219D40C600A81EA9 /* YYTestModel.m */; };
+		1105DFA6219D448300A81EA9 /* YYHeadTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1105DFA4219D448300A81EA9 /* YYHeadTestView.xib */; };
+		1105DFA7219D448300A81EA9 /* YYHeadTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1105DFA5219D448300A81EA9 /* YYHeadTestView.m */; };
+		1105DFAB219D449400A81EA9 /* YYFootTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1105DFA8219D449300A81EA9 /* YYFootTestView.m */; };
+		1105DFAC219D449400A81EA9 /* YYFootTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1105DFA9219D449300A81EA9 /* YYFootTestView.xib */; };
+		1105DFB1219D458300A81EA9 /* YYManyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1105DFAF219D458300A81EA9 /* YYManyCell.m */; };
+		1105DFB2219D458300A81EA9 /* YYManyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1105DFB0219D458300A81EA9 /* YYManyCell.xib */; };
 		110B4407219C0AD10008B65C /* YYTableViewLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110B4406219C0AD10008B65C /* YYTableViewLayoutController.m */; };
 		110B440C219C0B190008B65C /* YYLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 110B440A219C0B190008B65C /* YYLayoutCell.m */; };
 		110B440D219C0B190008B65C /* YYLayoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110B440B219C0B190008B65C /* YYLayoutCell.xib */; };
@@ -78,6 +84,15 @@
 		1105DF9A219D40A600A81EA9 /* YYTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTestCell.h; sourceTree = "<group>"; };
 		1105DF9E219D40C600A81EA9 /* YYTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTestModel.h; sourceTree = "<group>"; };
 		1105DF9F219D40C600A81EA9 /* YYTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTestModel.m; sourceTree = "<group>"; };
+		1105DFA3219D448200A81EA9 /* YYHeadTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYHeadTestView.h; sourceTree = "<group>"; };
+		1105DFA4219D448300A81EA9 /* YYHeadTestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYHeadTestView.xib; sourceTree = "<group>"; };
+		1105DFA5219D448300A81EA9 /* YYHeadTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYHeadTestView.m; sourceTree = "<group>"; };
+		1105DFA8219D449300A81EA9 /* YYFootTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFootTestView.m; sourceTree = "<group>"; };
+		1105DFA9219D449300A81EA9 /* YYFootTestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYFootTestView.xib; sourceTree = "<group>"; };
+		1105DFAA219D449300A81EA9 /* YYFootTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFootTestView.h; sourceTree = "<group>"; };
+		1105DFAE219D458300A81EA9 /* YYManyCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYManyCell.h; sourceTree = "<group>"; };
+		1105DFAF219D458300A81EA9 /* YYManyCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYManyCell.m; sourceTree = "<group>"; };
+		1105DFB0219D458300A81EA9 /* YYManyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYManyCell.xib; sourceTree = "<group>"; };
 		110B4405219C0AD10008B65C /* YYTableViewLayoutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTableViewLayoutController.h; sourceTree = "<group>"; };
 		110B4406219C0AD10008B65C /* YYTableViewLayoutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTableViewLayoutController.m; sourceTree = "<group>"; };
 		110B4409219C0B190008B65C /* YYLayoutCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYLayoutCell.h; sourceTree = "<group>"; };
@@ -223,6 +238,9 @@
 		1105DF91219D3F0200A81EA9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1105DFAD219D455D00A81EA9 /* cell */,
+				1105DFA1219D446300A81EA9 /* HeadView */,
+				1105DFA2219D446C00A81EA9 /* FootView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -234,6 +252,36 @@
 				1105DF9F219D40C600A81EA9 /* YYTestModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1105DFA1219D446300A81EA9 /* HeadView */ = {
+			isa = PBXGroup;
+			children = (
+				1105DFA3219D448200A81EA9 /* YYHeadTestView.h */,
+				1105DFA5219D448300A81EA9 /* YYHeadTestView.m */,
+				1105DFA4219D448300A81EA9 /* YYHeadTestView.xib */,
+			);
+			path = HeadView;
+			sourceTree = "<group>";
+		};
+		1105DFA2219D446C00A81EA9 /* FootView */ = {
+			isa = PBXGroup;
+			children = (
+				1105DFAA219D449300A81EA9 /* YYFootTestView.h */,
+				1105DFA8219D449300A81EA9 /* YYFootTestView.m */,
+				1105DFA9219D449300A81EA9 /* YYFootTestView.xib */,
+			);
+			path = FootView;
+			sourceTree = "<group>";
+		};
+		1105DFAD219D455D00A81EA9 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				1105DFAE219D458300A81EA9 /* YYManyCell.h */,
+				1105DFAF219D458300A81EA9 /* YYManyCell.m */,
+				1105DFB0219D458300A81EA9 /* YYManyCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 		110B4403219C0A790008B65C /* tableViewCell自动布局 */ = {
@@ -687,16 +735,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1105DFAC219D449400A81EA9 /* YYFootTestView.xib in Resources */,
 				119695BD213B9B60006035D4 /* LaunchScreen.storyboard in Resources */,
 				1129162D214615DE00B27CF0 /* YYTableViewCell.xib in Resources */,
 				119695BA213B9B60006035D4 /* Assets.xcassets in Resources */,
 				1129161E214613D800B27CF0 /* YYMainTableViewCell.xib in Resources */,
 				11A095A321533E540065DE6F /* YYNestingSmallCell.xib in Resources */,
+				1105DFB2219D458300A81EA9 /* YYManyCell.xib in Resources */,
 				119DB60521902FE500441B3B /* YYTextFieldViewController.xib in Resources */,
 				11291626214615D800B27CF0 /* YYFootView.xib in Resources */,
 				1163FA5F21476D4C00809A0D /* YYNoDataView.xib in Resources */,
 				1105DF9C219D40A600A81EA9 /* YYTestCell.xib in Resources */,
 				119695B8213B9B5F006035D4 /* Main.storyboard in Resources */,
+				1105DFA6219D448300A81EA9 /* YYHeadTestView.xib in Resources */,
 				110B440D219C0B190008B65C /* YYLayoutCell.xib in Resources */,
 				11A0959E21533D790065DE6F /* YYNestingCell.xib in Resources */,
 				112916382146512400B27CF0 /* YYCollectionViewCell.xib in Resources */,
@@ -748,6 +799,7 @@
 				119695B5213B9B5F006035D4 /* YYMainViewController.m in Sources */,
 				110B4415219C18F00008B65C /* YYLayoutModel.m in Sources */,
 				1163FA5D21476D3E00809A0D /* YYNoDataView.m in Sources */,
+				1105DFA7219D448300A81EA9 /* YYHeadTestView.m in Sources */,
 				11A095A221533E540065DE6F /* YYNestingSmallCell.m in Sources */,
 				110B440C219C0B190008B65C /* YYLayoutCell.m in Sources */,
 				110B4407219C0AD10008B65C /* YYTableViewLayoutController.m in Sources */,
@@ -765,9 +817,11 @@
 				1129161D214613D800B27CF0 /* YYMainTableViewCell.m in Sources */,
 				1105DF97219D3FCF00A81EA9 /* YYTableViewSectionManyController.m in Sources */,
 				112916142146120700B27CF0 /* YYTableViewController.m in Sources */,
+				1105DFB1219D458300A81EA9 /* YYManyCell.m in Sources */,
 				11291631214615EA00B27CF0 /* YYDrugModel.m in Sources */,
 				112916372146512400B27CF0 /* YYCollectionViewCell.m in Sources */,
 				11A0959721533CF40065DE6F /* YYNestingTableViewController.m in Sources */,
+				1105DFAB219D449400A81EA9 /* YYFootTestView.m in Sources */,
 				116541F621887D1A00327303 /* YYLabel.m in Sources */,
 				116541F22188797800327303 /* YYArraySortViewController.m in Sources */,
 				11291627214615D800B27CF0 /* YYFootView.m in Sources */,

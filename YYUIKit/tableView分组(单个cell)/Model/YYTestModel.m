@@ -9,5 +9,12 @@
 #import "YYTestModel.h"
 
 @implementation YYTestModel
-
+- (NSMutableArray *)dataSource
+{
+    if (!_dataSource)
+    {
+        _dataSource = [[NSMutableArray alloc] init];
+    }
+    return _dataSource;
+}
 @end
