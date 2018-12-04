@@ -20,9 +20,11 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     //升序
-    [self ascendingArray];
+    //[self ascendingArray];
     //降序
-    [self descendingArray];
+    //[self descendingArray];
+    //删除元素
+    [self deleteItemInArray];
 }
 
 #pragma mark - 升序
@@ -50,6 +52,32 @@
     }];
     NSLog(@"降序结果 = %@",tempArr);
 }
+
+#pragma mark - 数组遍历删除元素
+- (void)deleteItemInArray
+{
+    NSMutableArray *dataSource = [[NSMutableArray alloc] initWithObjects:
+                                  @"1",
+                                  @"4",
+                                  @"3",
+                                  @"5",
+                                  @"3",
+                                  @"6",
+                                  @"7",
+                                  @"3",
+                                  @"1",nil];
+    for (int i = 0; i < dataSource.count; i ++)
+    {
+        NSString *item = dataSource[i];
+        if ([item isEqualToString:@"3"])
+        {
+            [dataSource removeObject:item];
+            i --;
+        }
+    }
+    NSLog(@"dataSource = %@",dataSource);
+}
+
 
 #pragma mark - Getter And Setter
 - (NSMutableArray *)dataArray
