@@ -33,6 +33,9 @@
 		11291631214615EA00B27CF0 /* YYDrugModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11291630214615EA00B27CF0 /* YYDrugModel.m */; };
 		112916372146512400B27CF0 /* YYCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 112916352146512400B27CF0 /* YYCollectionViewCell.m */; };
 		112916382146512400B27CF0 /* YYCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 112916362146512400B27CF0 /* YYCollectionViewCell.xib */; };
+		112F35E421B699A70005123F /* YYiCarouselViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112F35E321B699A70005123F /* YYiCarouselViewController.m */; };
+		112F35E721B69A260005123F /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 112F35E521B69A260005123F /* iCarousel.m */; };
+		112F35EC21B69A780005123F /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 112F35EB21B69A770005123F /* UIView+Extension.m */; };
 		1163FA5D21476D3E00809A0D /* YYNoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1163FA5C21476D3E00809A0D /* YYNoDataView.m */; };
 		1163FA5F21476D4C00809A0D /* YYNoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1163FA5E21476D4C00809A0D /* YYNoDataView.xib */; };
 		116541F22188797800327303 /* YYArraySortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 116541F12188797800327303 /* YYArraySortViewController.m */; };
@@ -119,6 +122,12 @@
 		112916342146512400B27CF0 /* YYCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCollectionViewCell.h; sourceTree = "<group>"; };
 		112916352146512400B27CF0 /* YYCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYCollectionViewCell.m; sourceTree = "<group>"; };
 		112916362146512400B27CF0 /* YYCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYCollectionViewCell.xib; sourceTree = "<group>"; };
+		112F35E221B699A70005123F /* YYiCarouselViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYiCarouselViewController.h; sourceTree = "<group>"; };
+		112F35E321B699A70005123F /* YYiCarouselViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYiCarouselViewController.m; sourceTree = "<group>"; };
+		112F35E521B69A260005123F /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		112F35E621B69A260005123F /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		112F35EA21B69A770005123F /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		112F35EB21B69A770005123F /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		1163FA5B21476D3E00809A0D /* YYNoDataView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYNoDataView.h; sourceTree = "<group>"; };
 		1163FA5C21476D3E00809A0D /* YYNoDataView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYNoDataView.m; sourceTree = "<group>"; };
 		1163FA5E21476D4C00809A0D /* YYNoDataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYNoDataView.xib; sourceTree = "<group>"; };
@@ -418,6 +427,35 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		112F35E121B699820005123F /* 轮播图 */ = {
+			isa = PBXGroup;
+			children = (
+				112F35EA21B69A770005123F /* UIView+Extension.h */,
+				112F35EB21B69A770005123F /* UIView+Extension.m */,
+				112F35E921B69A3E0005123F /* Controller */,
+				112F35E821B69A290005123F /* 三方件 */,
+			);
+			path = "轮播图";
+			sourceTree = "<group>";
+		};
+		112F35E821B69A290005123F /* 三方件 */ = {
+			isa = PBXGroup;
+			children = (
+				112F35E621B69A260005123F /* iCarousel.h */,
+				112F35E521B69A260005123F /* iCarousel.m */,
+			);
+			path = "三方件";
+			sourceTree = "<group>";
+		};
+		112F35E921B69A3E0005123F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				112F35E221B699A70005123F /* YYiCarouselViewController.h */,
+				112F35E321B699A70005123F /* YYiCarouselViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		1163FA5A21476D2200809A0D /* NoDataView */ = {
 			isa = PBXGroup;
 			children = (
@@ -502,6 +540,7 @@
 				1105DF8C219D3EBB00A81EA9 /* tableView分组(单个cell) */,
 				1105DF8D219D3ED200A81EA9 /* tableView分组(多个cell) */,
 				116A1AB2215CC8A0007238B8 /* UIDatePicker */,
+				112F35E121B699820005123F /* 轮播图 */,
 				11DA89C4213BA12000F57154 /* other */,
 			);
 			path = YYUIKit;
@@ -802,12 +841,15 @@
 				1105DFA7219D448300A81EA9 /* YYHeadTestView.m in Sources */,
 				11A095A221533E540065DE6F /* YYNestingSmallCell.m in Sources */,
 				110B440C219C0B190008B65C /* YYLayoutCell.m in Sources */,
+				112F35E421B699A70005123F /* YYiCarouselViewController.m in Sources */,
 				110B4407219C0AD10008B65C /* YYTableViewLayoutController.m in Sources */,
+				112F35E721B69A260005123F /* iCarousel.m in Sources */,
 				116A1AB5215CC8CE007238B8 /* YYDatePickerController.m in Sources */,
 				1105DF9B219D40A600A81EA9 /* YYTestCell.m in Sources */,
 				119DB60421902FE500441B3B /* YYTextFieldViewController.m in Sources */,
 				1105DFA0219D40C600A81EA9 /* YYTestModel.m in Sources */,
 				1129162C214615DE00B27CF0 /* YYTableViewCell.m in Sources */,
+				112F35EC21B69A780005123F /* UIView+Extension.m in Sources */,
 				116541FB21887D7000327303 /* YYLabelViewController.m in Sources */,
 				119695C0213B9B60006035D4 /* main.m in Sources */,
 				112916172146122100B27CF0 /* YYCollectionViewController.m in Sources */,

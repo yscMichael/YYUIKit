@@ -87,7 +87,8 @@
                       @"UITableView嵌套",
                       @"TableView分组(单个cell)",
                       @"TableView分组(多个cell)",
-                      @"UIDatePicker时间选择器",nil];
+                      @"UIDatePicker时间选择器",
+                      @"轮播图",nil];
     }
     return _dataSoure;
 }
@@ -106,7 +107,8 @@
                             @"YYNestingTableViewController",
                             @"YYTableViewSectionSingleController",
                             @"YYTableViewSectionManyController",
-                            @"YYDatePickerController",nil];
+                            @"YYDatePickerController",
+                            @"YYiCarouselViewController",nil];
     }
     return _controllerSoure;
 }
