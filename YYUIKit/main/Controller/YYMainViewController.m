@@ -87,6 +87,9 @@
                       @"UITableView嵌套",
                       @"TableView分组(单个cell)",
                       @"TableView分组(多个cell)",
+                      @"tableView动态更新头部",
+                      @"OC中的数学函数",
+                      @"运行时相关知识介绍",
                       @"UIDatePicker时间选择器",
                       @"轮播图",nil];
     }
@@ -107,6 +110,9 @@
                             @"YYNestingTableViewController",
                             @"YYTableViewSectionSingleController",
                             @"YYTableViewSectionManyController",
+                            @"YYTableViewHeaderViewController",
+                            @"YYMathViewController",
+                            @"YYRunTimeViewController",
                             @"YYDatePickerController",
                             @"YYiCarouselViewController",nil];
     }

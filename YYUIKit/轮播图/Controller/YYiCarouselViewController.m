@@ -61,7 +61,7 @@ static int YYIndex = 1;
     if (view == nil)
     {
         YYScrollView *targetView = [[[NSBundle mainBundle] loadNibNamed:@"YYScrollView" owner:nil options:nil] lastObject];
-        targetView.frame = CGRectMake(0, 0, ScreenWidth - 100, 200);
+        targetView.frame = CGRectMake(0, 0, ScreenWidth - 200, 200);
         NSString *imageName = [NSString stringWithFormat:@"%@.jepg",self.items[index]];
         targetView.imageView.image = [UIImage imageNamed:imageName];
         view = (UIView *)targetView;
@@ -188,7 +188,7 @@ static int YYIndex = 1;
 {
     if (!_carousel)
     {
-        _carousel = [[iCarousel alloc] initWithFrame:CGRectMake(0, 200, ScreenWidth, 200)];
+        _carousel = [[iCarousel alloc] initWithFrame:CGRectMake(0, 200, ScreenWidth - 100, 200)];
         _carousel.type = iCarouselTypeCustom;
         _carousel.dataSource = self;
         _carousel.delegate = self;
