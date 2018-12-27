@@ -35,7 +35,6 @@
     personTwo.age = 10;
     NSString *weightTwo = [Tool getAssociatedValueWithTarget:personTwo withPropertyName:@"weight"];
     NSLog(@"personTwopersonTwo = %@",weightTwo);
-
 }
 
 #pragma mark - Getter And Setter

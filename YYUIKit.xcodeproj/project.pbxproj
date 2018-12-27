@@ -39,12 +39,14 @@
 		112F35E421B699A70005123F /* YYiCarouselViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112F35E321B699A70005123F /* YYiCarouselViewController.m */; };
 		112F35E721B69A260005123F /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 112F35E521B69A260005123F /* iCarousel.m */; };
 		112F35EC21B69A780005123F /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 112F35EB21B69A770005123F /* UIView+Extension.m */; };
+		11344D5621D3CDD9002566C0 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 11344D5521D3CDD9002566C0 /* Son.m */; };
 		1163FA5D21476D3E00809A0D /* YYNoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1163FA5C21476D3E00809A0D /* YYNoDataView.m */; };
 		1163FA5F21476D4C00809A0D /* YYNoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1163FA5E21476D4C00809A0D /* YYNoDataView.xib */; };
 		116541F22188797800327303 /* YYArraySortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 116541F12188797800327303 /* YYArraySortViewController.m */; };
 		116541F621887D1A00327303 /* YYLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 116541F521887D1A00327303 /* YYLabel.m */; };
 		116541FB21887D7000327303 /* YYLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 116541FA21887D7000327303 /* YYLabelViewController.m */; };
 		116A1AB5215CC8CE007238B8 /* YYDatePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 116A1AB4215CC8CE007238B8 /* YYDatePickerController.m */; };
+		1174A8C521D31ABB00BA98D7 /* YYArrayCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174A8C421D31ABB00BA98D7 /* YYArrayCopyViewController.m */; };
 		119695B2213B9B5F006035D4 /* YYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 119695B1213B9B5F006035D4 /* YYAppDelegate.m */; };
 		119695B5213B9B5F006035D4 /* YYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 119695B4213B9B5F006035D4 /* YYMainViewController.m */; };
 		119695B8213B9B5F006035D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119695B6213B9B5F006035D4 /* Main.storyboard */; };
@@ -141,6 +143,8 @@
 		112F35E621B69A260005123F /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		112F35EA21B69A770005123F /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		112F35EB21B69A770005123F /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		11344D5421D3CDD9002566C0 /* Son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
+		11344D5521D3CDD9002566C0 /* Son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
 		1163FA5B21476D3E00809A0D /* YYNoDataView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYNoDataView.h; sourceTree = "<group>"; };
 		1163FA5C21476D3E00809A0D /* YYNoDataView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYNoDataView.m; sourceTree = "<group>"; };
 		1163FA5E21476D4C00809A0D /* YYNoDataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYNoDataView.xib; sourceTree = "<group>"; };
@@ -152,6 +156,8 @@
 		116541FA21887D7000327303 /* YYLabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYLabelViewController.m; sourceTree = "<group>"; };
 		116A1AB3215CC8CE007238B8 /* YYDatePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYDatePickerController.h; sourceTree = "<group>"; };
 		116A1AB4215CC8CE007238B8 /* YYDatePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYDatePickerController.m; sourceTree = "<group>"; };
+		1174A8C321D31ABB00BA98D7 /* YYArrayCopyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYArrayCopyViewController.h; sourceTree = "<group>"; };
+		1174A8C421D31ABB00BA98D7 /* YYArrayCopyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYArrayCopyViewController.m; sourceTree = "<group>"; };
 		119695AD213B9B5F006035D4 /* YYUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		119695B0213B9B5F006035D4 /* YYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYAppDelegate.h; sourceTree = "<group>"; };
 		119695B1213B9B5F006035D4 /* YYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYAppDelegate.m; sourceTree = "<group>"; };
@@ -544,6 +550,15 @@
 			path = UIDatePicker;
 			sourceTree = "<group>";
 		};
+		1174A8C221D319DB00BA98D7 /* 数组拷贝 */ = {
+			isa = PBXGroup;
+			children = (
+				1174A8C321D31ABB00BA98D7 /* YYArrayCopyViewController.h */,
+				1174A8C421D31ABB00BA98D7 /* YYArrayCopyViewController.m */,
+			);
+			path = "数组拷贝";
+			sourceTree = "<group>";
+		};
 		119695A4213B9B5E006035D4 = {
 			isa = PBXGroup;
 			children = (
@@ -586,6 +601,7 @@
 				11D955BD21C8A18100ED5F63 /* tableView动态更新头部 */,
 				11D955C221C8C7AD00ED5F63 /* OC中的数学函数 */,
 				11FDAB5921D1DADA00F8A035 /* 运行时 */,
+				1174A8C221D319DB00BA98D7 /* 数组拷贝 */,
 				116A1AB2215CC8A0007238B8 /* UIDatePicker */,
 				112F35E121B699820005123F /* 轮播图 */,
 				11DA89C4213BA12000F57154 /* other */,
@@ -767,6 +783,8 @@
 			children = (
 				11FDAB6421D1DCF100F8A035 /* Person.h */,
 				11FDAB6521D1DCF100F8A035 /* Person.m */,
+				11344D5421D3CDD9002566C0 /* Son.h */,
+				11344D5521D3CDD9002566C0 /* Son.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -986,7 +1004,9 @@
 				11291631214615EA00B27CF0 /* YYDrugModel.m in Sources */,
 				112916372146512400B27CF0 /* YYCollectionViewCell.m in Sources */,
 				11A0959721533CF40065DE6F /* YYNestingTableViewController.m in Sources */,
+				11344D5621D3CDD9002566C0 /* Son.m in Sources */,
 				1105DFAB219D449400A81EA9 /* YYFootTestView.m in Sources */,
+				1174A8C521D31ABB00BA98D7 /* YYArrayCopyViewController.m in Sources */,
 				116541F621887D1A00327303 /* YYLabel.m in Sources */,
 				1125E10321B6D80900D0E529 /* UIViewController+BackButtonHandler.m in Sources */,
 				116541F22188797800327303 /* YYArraySortViewController.m in Sources */,

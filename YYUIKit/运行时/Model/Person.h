@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+@class Son;
 
-@interface Person : NSObject
+@interface Person : NSObject<NSCopying,NSMutableCopying>
 //姓名
 @property (nonatomic ,copy) NSString *name;
 //年龄
 @property (nonatomic,assign) int age;
-//身高(这里尝试动态添加属性)
-//@property (nonatomic ,copy) NSString *weight;
+//模型
+@property (nonatomic,strong) Son *son;
 @end

@@ -90,6 +90,7 @@
                       @"tableView动态更新头部",
                       @"OC中的数学函数",
                       @"运行时相关知识介绍",
+                      @"数组拷贝",
                       @"UIDatePicker时间选择器",
                       @"轮播图",nil];
     }
@@ -113,6 +114,7 @@
                             @"YYTableViewHeaderViewController",
                             @"YYMathViewController",
                             @"YYRunTimeViewController",
+                            @"YYArrayCopyViewController",
                             @"YYDatePickerController",
                             @"YYiCarouselViewController",nil];
     }
