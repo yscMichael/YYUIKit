@@ -14,6 +14,8 @@
 @property (nonatomic ,copy) NSString *name;
 //年龄
 @property (nonatomic,assign) int age;
-//模型
+//模型(要初始化)
 @property (nonatomic,strong) Son *son;
+//数组(要初始化)
+@property (nonatomic,strong) NSMutableArray *modelArray;
 @end

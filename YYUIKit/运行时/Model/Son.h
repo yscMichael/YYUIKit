@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Son : NSObject
+@interface Son : NSObject<NSCopying,NSMutableCopying>
 //姓名
 @property (nonatomic ,copy) NSString *name;
 @end
