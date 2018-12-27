@@ -78,10 +78,10 @@
     [tempArrayOne isKindOfClass:[NSMutableArray class]] ? NSLog(@"tempArrayOne可变数组"):NSLog(@"tempArrayOne不可变数组");
     NSLog(@"normalArray = %@",normalArray);
     NSLog(@"normalArray内存地址 = %p",normalArray);
-    NSLog(@"normalArray指针地址= %x",&normalArray);
+    NSLog(@"normalArray指针地址= %x",(int)&normalArray);
     NSLog(@"tempArrayOne = %@",tempArrayOne);
     NSLog(@"tempArrayOne内存地址 = %p",tempArrayOne);
-    NSLog(@"tempArrayOne指针地址= %x",&tempArrayOne);
+    NSLog(@"tempArrayOne指针地址= %x",(int)&tempArrayOne);
 }
 
 #pragma mark - 可变数组进行mutableCopy(1.3)
@@ -94,10 +94,10 @@
     normalArray[0] = @"1000";
     NSLog(@"normalArray = %@",normalArray);
     NSLog(@"normalArray内存地址 = %p",normalArray);
-    NSLog(@"normalArray指针地址= %x",&normalArray);
+    NSLog(@"normalArray指针地址= %x",(int)&normalArray);
     NSLog(@"tempArrayOne = %@",tempArrayOne);
     NSLog(@"tempArrayOne内存地址 = %p",tempArrayOne);
-    NSLog(@"tempArrayOne指针地址= %x",&tempArrayOne);
+    NSLog(@"tempArrayOne指针地址= %x",(int)&tempArrayOne);
 
     //如果里面装的是模型又怎么样
 //    Person *person = [[Person alloc] init];
@@ -145,10 +145,10 @@
     [tempArrayOne isKindOfClass:[NSMutableArray class]] ? NSLog(@"tempArrayOne可变数组"):NSLog(@"tempArrayOne不可变数组");
     NSLog(@"normalArray = %@",normalArray);
     NSLog(@"normalArray内存地址 = %p",normalArray);
-    NSLog(@"normalArray指针地址= %x",&normalArray);
+    NSLog(@"normalArray指针地址= %x",(int)&normalArray);
     NSLog(@"tempArrayOne = %@",tempArrayOne);
     NSLog(@"tempArrayOne内存地址 = %p",tempArrayOne);
-    NSLog(@"tempArrayOne指针地址= %x",&tempArrayOne);
+    NSLog(@"tempArrayOne指针地址= %x",(int)&tempArrayOne);
 }
 
 #pragma mark - 数组中模型元素
@@ -207,10 +207,10 @@
     NSLog(@"-----------------------------------");
     NSLog(@"normalArray = %@",normalModelArray);
     NSLog(@"normalArray内存地址 = %p",normalModelArray);
-    NSLog(@"normalArray指针地址= %x",&normalModelArray);
+    NSLog(@"normalArray指针地址= %x",(int)&normalModelArray);
     NSLog(@"tempArrayOne = %@",tempModelArrayOne);
     NSLog(@"tempArrayOne内存地址 = %p",tempModelArrayOne);
-    NSLog(@"tempArrayOne指针地址= %x",&tempModelArrayOne);
+    NSLog(@"tempArrayOne指针地址= %x",(int)&tempModelArrayOne);
 }
 
 #pragma mark - 不可变数组(模型)进行mutableCopy(2.4)
@@ -234,10 +234,10 @@
     NSLog(@"-----------------------------------");
     NSLog(@"normalArray = %@",normalModelArray);
     NSLog(@"normalArray内存地址 = %p",normalModelArray);
-    NSLog(@"normalArray指针地址= %x",&normalModelArray);
+    NSLog(@"normalArray指针地址= %x",(int)&normalModelArray);
     NSLog(@"tempArrayOne = %@",tempModelArrayOne);
     NSLog(@"tempArrayOne内存地址 = %p",tempModelArrayOne);
-    NSLog(@"tempArrayOne指针地址= %x",&tempModelArrayOne);
+    NSLog(@"tempArrayOne指针地址= %x",(int)&tempModelArrayOne);
 }
 
 #pragma mark - 测试模型
