@@ -24,7 +24,7 @@
     //[self testOne];
     //[self testTwo];
     //[self testThree];
-    //[self testFour];
+    [self testFour];
 
     //2、数组中含有模型，进行拷贝解析
     //[self testModelOne];
@@ -42,7 +42,7 @@
 
     //5、研究如何将数组模型全部拷贝出来<二>
     //[self appleSystemSuggestionOne];
-    [self appleSystemSuggestionTwo];
+    //[self appleSystemSuggestionTwo];
 }
 
 //问题:
@@ -55,49 +55,58 @@
 //7、如何实现数组的内容Copy?
 
 #pragma mark - 数组中普通元素
-#pragma mark - 可变数组进行copy(1.1)
-//1.1、会开辟新的内存空间,生成一个新的不可变数组,两个数组之间不受任何影响
+#pragma mark - 不可变数组进行copy(1.1)
+//1.1、不会开辟新的内存空间,仍然指向当前数组,说白了就是一个数组
 - (void)testOne
 {
-    NSMutableArray *normalArray = [[NSMutableArray alloc] initWithObjects:@"1",@"2",@"3", nil];
-    id tempArrayOne = [normalArray copy];
-    [tempArrayOne isKindOfClass:[NSMutableArray class]] ? NSLog(@"tempArrayOne可变数组"):NSLog(@"tempArrayOne不可变数组");
-    normalArray[0] = @"1000";
-    NSLog(@"normalArray = %@",normalArray);
+    NSArray *normalArray = [[NSArray alloc] initWithObjects:@"1",@"2",@"3", nil];
+    id tempArray = [normalArray copy];
+    [tempArray isKindOfClass:[NSMutableArray class]] ? NSLog(@"tempArrayOne可变数组"):NSLog(@"tempArrayOne不可变数组");
+
     NSLog(@"normalArray内存地址 = %p",normalArray);
-    NSLog(@"tempArrayOne = %@",tempArrayOne);
-    NSLog(@"tempArrayOne内存地址 = %p",tempArrayOne);
+    NSLog(@"tempArrayOne内存地址 = %p",tempArray);
 }
 
-#pragma mark - 不可变数组进行copy(1.2)
-//1.2、不会开辟新的内存空间,仍然指向当前数组,说白了就是一个数组
+#pragma mark - 可变数组进行copy(1.2)
+//1.2、会开辟新的内存空间,生成一个新的不可变数组,两个数组之间不受任何影响
 - (void)testTwo
 {
-    NSArray *normalArray = [[NSArray alloc] initWithObjects:@"1",@"2",@"3", nil];
-    id tempArrayOne = [normalArray copy];
-    [tempArrayOne isKindOfClass:[NSMutableArray class]] ? NSLog(@"tempArrayOne可变数组"):NSLog(@"tempArrayOne不可变数组");
-    NSLog(@"normalArray = %@",normalArray);
+    NSMutableArray *normalArray = [[NSMutableArray alloc] initWithObjects:@"1",@"2",@"3", nil];
+    id tempArray = [normalArray copy];
+    [tempArray isKindOfClass:[NSMutableArray class]] ? NSLog(@"tempArrayOne可变数组"):NSLog(@"tempArrayOne不可变数组");
+    normalArray[0] = @"1000";//修改数组元素
     NSLog(@"normalArray内存地址 = %p",normalArray);
-    NSLog(@"normalArray指针地址= %x",(int)&normalArray);
-    NSLog(@"tempArrayOne = %@",tempArrayOne);
-    NSLog(@"tempArrayOne内存地址 = %p",tempArrayOne);
-    NSLog(@"tempArrayOne指针地址= %x",(int)&tempArrayOne);
+    NSLog(@"tempArrayOne内存地址 = %p",tempArray);
+    NSLog(@"normalArray = %@",normalArray);
+    NSLog(@"tempArrayOne = %@",tempArray);
 }
 
-#pragma mark - 可变数组进行mutableCopy(1.3)
+#pragma mark - 不可变数组进行mutableCopy(1.3)
 //1.3、会开辟新的内存空间、生成一个可变数组、两个数组之间相互不影响
 - (void)testThree
+{
+    NSArray *normalArray = [[NSArray alloc] initWithObjects:@"1",@"2",@"3", nil];
+    id tempArray = [normalArray mutableCopy];
+    [tempArray isKindOfClass:[NSMutableArray class]] ? NSLog(@"tempArrayOne可变数组"):NSLog(@"tempArrayOne不可变数组");
+    tempArray[0] = @"1000";//改变数组
+    NSLog(@"normalArray = %@",normalArray);
+    NSLog(@"tempArrayOne = %@",tempArray);
+    NSLog(@"normalArray内存地址 = %p",normalArray);
+    NSLog(@"tempArrayOne内存地址 = %p",tempArray);
+}
+
+#pragma mark - 可变数组进行mutableCopy(1.4)
+//1.4、会开辟新的内存空间、生成一个可变数组、两个数组之间相互不影响
+- (void)testFour
 {
     NSMutableArray *normalArray = [[NSMutableArray alloc] initWithObjects:@"1",@"2",@"3", nil];
     id tempArrayOne = [normalArray mutableCopy];
     [tempArrayOne isKindOfClass:[NSMutableArray class]] ? NSLog(@"tempArrayOne可变数组"):NSLog(@"tempArrayOne不可变数组");
     normalArray[0] = @"1000";
     NSLog(@"normalArray = %@",normalArray);
-    NSLog(@"normalArray内存地址 = %p",normalArray);
-    NSLog(@"normalArray指针地址= %x",(int)&normalArray);
     NSLog(@"tempArrayOne = %@",tempArrayOne);
+    NSLog(@"normalArray内存地址 = %p",normalArray);
     NSLog(@"tempArrayOne内存地址 = %p",tempArrayOne);
-    NSLog(@"tempArrayOne指针地址= %x",(int)&tempArrayOne);
 
     //如果里面装的是模型又怎么样
 //    Person *person = [[Person alloc] init];
@@ -136,20 +145,7 @@
     NSLog(@"shallowCopyArray = %@",shallowCopyArray);
 }
 
-#pragma mark - 不可变数组进行mutableCopy(1.4)
-//1.4、会开辟新的内存空间、生成一个可变数组、两个数组之间相互不影响
-- (void)testFour
-{
-    NSArray *normalArray = [[NSArray alloc] initWithObjects:@"1",@"2",@"3", nil];
-    id tempArrayOne = [normalArray mutableCopy];
-    [tempArrayOne isKindOfClass:[NSMutableArray class]] ? NSLog(@"tempArrayOne可变数组"):NSLog(@"tempArrayOne不可变数组");
-    NSLog(@"normalArray = %@",normalArray);
-    NSLog(@"normalArray内存地址 = %p",normalArray);
-    NSLog(@"normalArray指针地址= %x",(int)&normalArray);
-    NSLog(@"tempArrayOne = %@",tempArrayOne);
-    NSLog(@"tempArrayOne内存地址 = %p",tempArrayOne);
-    NSLog(@"tempArrayOne指针地址= %x",(int)&tempArrayOne);
-}
+
 
 #pragma mark - 数组中模型元素
 #pragma mark - 可变数组(模型)进行copy(2.1)

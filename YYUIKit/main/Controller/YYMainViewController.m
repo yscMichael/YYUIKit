@@ -91,6 +91,7 @@
                       @"OC中的数学函数",
                       @"运行时相关知识介绍",
                       @"数组拷贝",
+                      @"子View超出父类范围",
                       @"UIDatePicker时间选择器",
                       @"轮播图",nil];
     }
@@ -115,6 +116,7 @@
                             @"YYMathViewController",
                             @"YYRunTimeViewController",
                             @"YYArrayCopyViewController",
+                            @"YYBeyondParentViewController",
                             @"YYDatePickerController",
                             @"YYiCarouselViewController",nil];
     }
