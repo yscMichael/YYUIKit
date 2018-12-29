@@ -18,6 +18,8 @@
 //@property (nonatomic,strong) UIView *parentView;
 //子类View
 @property (nonatomic,strong) UIView *childView;
+//testView
+@property (nonatomic,strong) UIView *testView;
 @end
 
 @implementation YYBeyondParentViewController
@@ -26,7 +28,21 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    [self initView];
+    //[self initView];
+    [self testScrollView];
+}
+
+- (void)testScrollView
+{
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 500, ScreenWidth, 50)];
+    scrollView.backgroundColor = [UIColor lightGrayColor];
+    scrollView.clipsToBounds = NO;
+    [self.view addSubview:scrollView];
+
+    UIView *testView = [[UIView alloc] initWithFrame:CGRectMake(-20, -20, 50, 50)];
+    testView.backgroundColor = [UIColor redColor];
+
+    [scrollView addSubview:testView];
 }
 
 - (void)initView
@@ -36,6 +52,7 @@
     self.parentView.center = CGPointMake(0, 0);
     [self.parentView addSubview:self.childView];
     self.childView.center = CGPointMake(0, 0);
+    [self.superView addSubview:self.testView];
 
     //添加手势
     UITapGestureRecognizer *superTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickSuperTap:)];
@@ -120,6 +137,16 @@
         _childView.backgroundColor = [UIColor lightGrayColor];
     }
     return _childView;
+}
+
+- (UIView *)testView
+{
+    if (!_testView)
+    {
+        _testView = [[UIView alloc] initWithFrame:CGRectMake(-10, -10, 30, 30)];
+        _testView.backgroundColor = [UIColor brownColor];
+    }
+    return _testView;
 }
 
 //结论:

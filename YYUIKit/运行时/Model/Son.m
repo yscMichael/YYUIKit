@@ -37,4 +37,23 @@
     son.name = [self.name mutableCopy];
     return son;
 }
+
+- (NSArray *)testArray
+{
+    if (!_testArray)
+    {
+        _testArray = [[NSArray alloc] init];
+    }
+    return _testArray;
+}
+
+- (NSMutableArray *)testMutableArray
+{
+    if (!_testMutableArray)
+    {
+        _testMutableArray = [[NSMutableArray alloc] init];
+    }
+    return _testMutableArray;
+}
+
 @end

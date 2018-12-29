@@ -11,4 +11,6 @@
 @interface Son : NSObject<NSCopying,NSMutableCopying>
 //姓名
 @property (nonatomic ,copy) NSString *name;
+@property (nonatomic,strong) NSArray *testArray;
+@property (nonatomic,strong) NSMutableArray *testMutableArray;
 @end

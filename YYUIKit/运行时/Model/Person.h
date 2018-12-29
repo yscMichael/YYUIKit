@@ -18,4 +18,6 @@
 @property (nonatomic,strong) Son *son;
 //数组(要初始化)
 @property (nonatomic,strong) NSMutableArray *modelArray;
+//测试可变性
+@property (nonatomic,strong) NSArray *testArray;
 @end
