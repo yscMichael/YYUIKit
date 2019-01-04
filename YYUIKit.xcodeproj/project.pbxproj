@@ -40,6 +40,8 @@
 		112F35E721B69A260005123F /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 112F35E521B69A260005123F /* iCarousel.m */; };
 		112F35EC21B69A780005123F /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 112F35EB21B69A770005123F /* UIView+Extension.m */; };
 		11344D5621D3CDD9002566C0 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 11344D5521D3CDD9002566C0 /* Son.m */; };
+		1146478021DF2B7200FE091B /* YYTestRuntimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146477F21DF2B7200FE091B /* YYTestRuntimeModel.m */; };
+		1146478321DF2BA300FE091B /* YYTestPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146478221DF2BA300FE091B /* YYTestPerson.m */; };
 		1163FA5D21476D3E00809A0D /* YYNoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1163FA5C21476D3E00809A0D /* YYNoDataView.m */; };
 		1163FA5F21476D4C00809A0D /* YYNoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1163FA5E21476D4C00809A0D /* YYNoDataView.xib */; };
 		116541F22188797800327303 /* YYArraySortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 116541F12188797800327303 /* YYArraySortViewController.m */; };
@@ -147,6 +149,10 @@
 		112F35EB21B69A770005123F /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		11344D5421D3CDD9002566C0 /* Son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
 		11344D5521D3CDD9002566C0 /* Son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
+		1146477E21DF2B7200FE091B /* YYTestRuntimeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTestRuntimeModel.h; sourceTree = "<group>"; };
+		1146477F21DF2B7200FE091B /* YYTestRuntimeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTestRuntimeModel.m; sourceTree = "<group>"; };
+		1146478121DF2BA300FE091B /* YYTestPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTestPerson.h; sourceTree = "<group>"; };
+		1146478221DF2BA300FE091B /* YYTestPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTestPerson.m; sourceTree = "<group>"; };
 		1163FA5B21476D3E00809A0D /* YYNoDataView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYNoDataView.h; sourceTree = "<group>"; };
 		1163FA5C21476D3E00809A0D /* YYNoDataView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYNoDataView.m; sourceTree = "<group>"; };
 		1163FA5E21476D4C00809A0D /* YYNoDataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYNoDataView.xib; sourceTree = "<group>"; };
@@ -819,6 +825,10 @@
 				11FDAB6521D1DCF100F8A035 /* Person.m */,
 				11344D5421D3CDD9002566C0 /* Son.h */,
 				11344D5521D3CDD9002566C0 /* Son.m */,
+				1146477E21DF2B7200FE091B /* YYTestRuntimeModel.h */,
+				1146477F21DF2B7200FE091B /* YYTestRuntimeModel.m */,
+				1146478121DF2BA300FE091B /* YYTestPerson.h */,
+				1146478221DF2BA300FE091B /* YYTestPerson.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1012,8 +1022,10 @@
 				1105DFA7219D448300A81EA9 /* YYHeadTestView.m in Sources */,
 				11D955C621C8C7E700ED5F63 /* YYMathViewController.m in Sources */,
 				11A095A221533E540065DE6F /* YYNestingSmallCell.m in Sources */,
+				1146478021DF2B7200FE091B /* YYTestRuntimeModel.m in Sources */,
 				110B440C219C0B190008B65C /* YYLayoutCell.m in Sources */,
 				112F35E421B699A70005123F /* YYiCarouselViewController.m in Sources */,
+				1146478321DF2BA300FE091B /* YYTestPerson.m in Sources */,
 				110B4407219C0AD10008B65C /* YYTableViewLayoutController.m in Sources */,
 				11FDAB6621D1DCF100F8A035 /* Person.m in Sources */,
 				112F35E721B69A260005123F /* iCarousel.m in Sources */,
