@@ -20,6 +20,8 @@
 @property (nonatomic,strong) UIView *childView;
 //testView
 @property (nonatomic,strong) UIView *testView;
+
+@property (nonatomic,assign) float tempNum;
 @end
 
 @implementation YYBeyondParentViewController
@@ -29,7 +31,15 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     //[self initView];
-    [self testScrollView];
+    //[self testScrollView];
+    if (self.tempNum == 0)
+    {
+        NSLog(@"为0-----------------");
+    }
+    else
+    {
+        NSLog(@"不为0---------------");
+    }
 }
 
 - (void)testScrollView

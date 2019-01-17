@@ -8,6 +8,7 @@
 
 #import "YYMainViewController.h"
 #import "YYMainTableViewCell.h"
+#import "YYArraySortViewController.h"
 
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
@@ -28,7 +29,27 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+//    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(100, 80, 100, 50)];
+//    button.backgroundColor = [UIColor blueColor];
+//    [button addTarget:self action:@selector(pressentCtrl:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:button];
+
     [self.view addSubview:self.tableView];
+}
+
+- (void)pressentCtrl:(UIButton *)sender
+{
+    NSLog(@"pressentCtrlpressentCtrlpressentCtrlpressentCtrl");
+    YYArraySortViewController *testCtrl = [[YYArraySortViewController alloc] init];
+    [self presentViewController:testCtrl animated:YES completion:^{
+        
+    }];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    NSLog(@"viewWillDisappear");
 }
 
 #pragma mark - UITableViewDelegate
