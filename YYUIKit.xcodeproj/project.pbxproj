@@ -74,6 +74,8 @@
 		11B308EE22DC84850087237E /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B308ED22DC84850087237E /* CollectionViewCell.m */; };
 		11B308F222DC84D10087237E /* XLCardSwitchFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B308F122DC84D10087237E /* XLCardSwitchFlowLayout.m */; };
 		11B308F422DC8D620087237E /* imageData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11B308F322DC8D620087237E /* imageData.plist */; };
+		11B308F922DC91860087237E /* YYCollectionSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B308F822DC91860087237E /* YYCollectionSearchController.m */; };
+		11B308FD22DC91F00087237E /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B308FB22DC91EF0087237E /* MyCollectionViewCell.m */; };
 		11D955C121C8A1FC00ED5F63 /* YYTableViewHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D955C021C8A1FC00ED5F63 /* YYTableViewHeaderViewController.m */; };
 		11D955C621C8C7E700ED5F63 /* YYMathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D955C521C8C7E700ED5F63 /* YYMathViewController.m */; };
 		11F9B93121D61D6A00DB6178 /* HitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F9B93021D61D6A00DB6178 /* HitTestView.m */; };
@@ -221,6 +223,10 @@
 		11B308F022DC84D10087237E /* XLCardSwitchFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCardSwitchFlowLayout.h; sourceTree = "<group>"; };
 		11B308F122DC84D10087237E /* XLCardSwitchFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCardSwitchFlowLayout.m; sourceTree = "<group>"; };
 		11B308F322DC8D620087237E /* imageData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageData.plist; sourceTree = "<group>"; };
+		11B308F722DC91860087237E /* YYCollectionSearchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCollectionSearchController.h; sourceTree = "<group>"; };
+		11B308F822DC91860087237E /* YYCollectionSearchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYCollectionSearchController.m; sourceTree = "<group>"; };
+		11B308FB22DC91EF0087237E /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
+		11B308FC22DC91EF0087237E /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
 		11D955BF21C8A1FC00ED5F63 /* YYTableViewHeaderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTableViewHeaderViewController.h; sourceTree = "<group>"; };
 		11D955C021C8A1FC00ED5F63 /* YYTableViewHeaderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTableViewHeaderViewController.m; sourceTree = "<group>"; };
 		11D955C421C8C7E700ED5F63 /* YYMathViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYMathViewController.h; sourceTree = "<group>"; };
@@ -656,6 +662,7 @@
 				112916112146119B00B27CF0 /* UITableView分组 */,
 				110B4403219C0A790008B65C /* tableViewCell自动布局 */,
 				11DA89C5213BA39C00F57154 /* UICollectionView分组 */,
+				11B308F522DC91410087237E /* UICollectionView搜索框删除 */,
 				11A0959421533C7E0065DE6F /* UITableView嵌套tableView(分组) */,
 				1105DF8C219D3EBB00A81EA9 /* tableView分组(单个cell) */,
 				1105DF8D219D3ED200A81EA9 /* tableView分组(多个cell) */,
@@ -867,6 +874,33 @@
 				11B308F122DC84D10087237E /* XLCardSwitchFlowLayout.m */,
 			);
 			path = layout;
+			sourceTree = "<group>";
+		};
+		11B308F522DC91410087237E /* UICollectionView搜索框删除 */ = {
+			isa = PBXGroup;
+			children = (
+				11B308F622DC915F0087237E /* Controller */,
+				11B308FA22DC91E00087237E /* View */,
+			);
+			path = "UICollectionView搜索框删除";
+			sourceTree = "<group>";
+		};
+		11B308F622DC915F0087237E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11B308F722DC91860087237E /* YYCollectionSearchController.h */,
+				11B308F822DC91860087237E /* YYCollectionSearchController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11B308FA22DC91E00087237E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11B308FC22DC91EF0087237E /* MyCollectionViewCell.h */,
+				11B308FB22DC91EF0087237E /* MyCollectionViewCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		11D955BD21C8A18100ED5F63 /* tableView动态更新头部 */ = {
@@ -1214,6 +1248,7 @@
 				11B308EE22DC84850087237E /* CollectionViewCell.m in Sources */,
 				1129161D214613D800B27CF0 /* YYMainTableViewCell.m in Sources */,
 				1105DF97219D3FCF00A81EA9 /* YYTableViewSectionManyController.m in Sources */,
+				11B308FD22DC91F00087237E /* MyCollectionViewCell.m in Sources */,
 				11B308D322DC7B5F0087237E /* twoImageViewController.m in Sources */,
 				11FDAB6121D1DB6400F8A035 /* Tool.m in Sources */,
 				112916142146120700B27CF0 /* YYTableViewController.m in Sources */,
@@ -1225,6 +1260,7 @@
 				1105DFAB219D449400A81EA9 /* YYFootTestView.m in Sources */,
 				11B308D622DC7B6C0087237E /* threeImageViewController.m in Sources */,
 				1174A8C521D31ABB00BA98D7 /* YYArrayCopyViewController.m in Sources */,
+				11B308F922DC91860087237E /* YYCollectionSearchController.m in Sources */,
 				116541F621887D1A00327303 /* YYLabel.m in Sources */,
 				11B308E722DC81AC0087237E /* YYScrollController.m in Sources */,
 				1125E10321B6D80900D0E529 /* UIViewController+BackButtonHandler.m in Sources */,
