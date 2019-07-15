@@ -57,6 +57,7 @@
 {
     NSString *ctrlString = self.controllerSoure[indexPath.row];
     Class viewControl = NSClassFromString(ctrlString);
+    YYLog(@"ctrlStringctrlString = %@",ctrlString);
     UIViewController *viewcontroller = [[viewControl alloc]init];
     [self.navigationController pushViewController:viewcontroller animated:YES];
 }
@@ -139,7 +140,7 @@
                             @"YYArrayCopyViewController",
                             @"YYBeyondParentViewController",
                             @"YYDatePickerController",
-                            @"YYiCarouselViewController",nil];
+                            @"YYScrollController",nil];
     }
     return _controllerSoure;
 }

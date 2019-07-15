@@ -65,6 +65,15 @@
 		11A0959E21533D790065DE6F /* YYNestingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A0959C21533D790065DE6F /* YYNestingCell.xib */; };
 		11A095A221533E540065DE6F /* YYNestingSmallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A095A021533E540065DE6F /* YYNestingSmallCell.m */; };
 		11A095A321533E540065DE6F /* YYNestingSmallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A095A121533E540065DE6F /* YYNestingSmallCell.xib */; };
+		11B308D022DC7B4F0087237E /* oneImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B308CF22DC7B4F0087237E /* oneImageViewController.m */; };
+		11B308D322DC7B5F0087237E /* twoImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B308D222DC7B5F0087237E /* twoImageViewController.m */; };
+		11B308D622DC7B6C0087237E /* threeImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B308D522DC7B6C0087237E /* threeImageViewController.m */; };
+		11B308DC22DC7B840087237E /* collectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B308DB22DC7B840087237E /* collectionViewController.m */; };
+		11B308E722DC81AC0087237E /* YYScrollController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B308E622DC81AC0087237E /* YYScrollController.m */; };
+		11B308EA22DC843A0087237E /* manyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B308E922DC843A0087237E /* manyViewController.m */; };
+		11B308EE22DC84850087237E /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B308ED22DC84850087237E /* CollectionViewCell.m */; };
+		11B308F222DC84D10087237E /* XLCardSwitchFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B308F122DC84D10087237E /* XLCardSwitchFlowLayout.m */; };
+		11B308F422DC8D620087237E /* imageData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11B308F322DC8D620087237E /* imageData.plist */; };
 		11D955C121C8A1FC00ED5F63 /* YYTableViewHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D955C021C8A1FC00ED5F63 /* YYTableViewHeaderViewController.m */; };
 		11D955C621C8C7E700ED5F63 /* YYMathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D955C521C8C7E700ED5F63 /* YYMathViewController.m */; };
 		11F9B93121D61D6A00DB6178 /* HitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F9B93021D61D6A00DB6178 /* HitTestView.m */; };
@@ -195,6 +204,23 @@
 		11A0959F21533E540065DE6F /* YYNestingSmallCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYNestingSmallCell.h; sourceTree = "<group>"; };
 		11A095A021533E540065DE6F /* YYNestingSmallCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYNestingSmallCell.m; sourceTree = "<group>"; };
 		11A095A121533E540065DE6F /* YYNestingSmallCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYNestingSmallCell.xib; sourceTree = "<group>"; };
+		11B308CE22DC7B4F0087237E /* oneImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oneImageViewController.h; sourceTree = "<group>"; };
+		11B308CF22DC7B4F0087237E /* oneImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = oneImageViewController.m; sourceTree = "<group>"; };
+		11B308D122DC7B5F0087237E /* twoImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = twoImageViewController.h; sourceTree = "<group>"; };
+		11B308D222DC7B5F0087237E /* twoImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = twoImageViewController.m; sourceTree = "<group>"; };
+		11B308D422DC7B6C0087237E /* threeImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = threeImageViewController.h; sourceTree = "<group>"; };
+		11B308D522DC7B6C0087237E /* threeImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = threeImageViewController.m; sourceTree = "<group>"; };
+		11B308DA22DC7B840087237E /* collectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = collectionViewController.h; sourceTree = "<group>"; };
+		11B308DB22DC7B840087237E /* collectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = collectionViewController.m; sourceTree = "<group>"; };
+		11B308E522DC81AC0087237E /* YYScrollController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYScrollController.h; sourceTree = "<group>"; };
+		11B308E622DC81AC0087237E /* YYScrollController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYScrollController.m; sourceTree = "<group>"; };
+		11B308E822DC843A0087237E /* manyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = manyViewController.h; sourceTree = "<group>"; };
+		11B308E922DC843A0087237E /* manyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = manyViewController.m; sourceTree = "<group>"; };
+		11B308EC22DC84850087237E /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		11B308ED22DC84850087237E /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		11B308F022DC84D10087237E /* XLCardSwitchFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCardSwitchFlowLayout.h; sourceTree = "<group>"; };
+		11B308F122DC84D10087237E /* XLCardSwitchFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCardSwitchFlowLayout.m; sourceTree = "<group>"; };
+		11B308F322DC8D620087237E /* imageData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageData.plist; sourceTree = "<group>"; };
 		11D955BF21C8A1FC00ED5F63 /* YYTableViewHeaderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTableViewHeaderViewController.h; sourceTree = "<group>"; };
 		11D955C021C8A1FC00ED5F63 /* YYTableViewHeaderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTableViewHeaderViewController.m; sourceTree = "<group>"; };
 		11D955C421C8C7E700ED5F63 /* YYMathViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYMathViewController.h; sourceTree = "<group>"; };
@@ -492,8 +518,13 @@
 		112F35E121B699820005123F /* 轮播图 */ = {
 			isa = PBXGroup;
 			children = (
-				112F35E921B69A3E0005123F /* Controller */,
-				1125E0F821B6CC9700D0E529 /* View */,
+				11B308C322DC79E70087237E /* main */,
+				11B308C522DC79F50087237E /* iCarousel */,
+				11B308C722DC7A270087237E /* oneImageView */,
+				11B308C822DC7A3F0087237E /* twoImageView */,
+				11B308C922DC7A4E0087237E /* threeImageView */,
+				11B308CA22DC7A5A0087237E /* manyImageView */,
+				11B308C622DC7A0F0087237E /* collectionView */,
 			);
 			path = "轮播图";
 			sourceTree = "<group>";
@@ -707,6 +738,137 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		11B308C322DC79E70087237E /* main */ = {
+			isa = PBXGroup;
+			children = (
+				11B308C422DC79EF0087237E /* Controller */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		11B308C422DC79EF0087237E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11B308E522DC81AC0087237E /* YYScrollController.h */,
+				11B308E622DC81AC0087237E /* YYScrollController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11B308C522DC79F50087237E /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				112F35E921B69A3E0005123F /* Controller */,
+				1125E0F821B6CC9700D0E529 /* View */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		11B308C622DC7A0F0087237E /* collectionView */ = {
+			isa = PBXGroup;
+			children = (
+				11B308E122DC7BB00087237E /* Controller */,
+				11B308EF22DC84C30087237E /* layout */,
+				11B308EB22DC846C0087237E /* View */,
+			);
+			path = collectionView;
+			sourceTree = "<group>";
+		};
+		11B308C722DC7A270087237E /* oneImageView */ = {
+			isa = PBXGroup;
+			children = (
+				11B308DD22DC7B890087237E /* Controller */,
+			);
+			path = oneImageView;
+			sourceTree = "<group>";
+		};
+		11B308C822DC7A3F0087237E /* twoImageView */ = {
+			isa = PBXGroup;
+			children = (
+				11B308DE22DC7B930087237E /* Controller */,
+			);
+			path = twoImageView;
+			sourceTree = "<group>";
+		};
+		11B308C922DC7A4E0087237E /* threeImageView */ = {
+			isa = PBXGroup;
+			children = (
+				11B308DF22DC7B9D0087237E /* Controller */,
+			);
+			path = threeImageView;
+			sourceTree = "<group>";
+		};
+		11B308CA22DC7A5A0087237E /* manyImageView */ = {
+			isa = PBXGroup;
+			children = (
+				11B308E022DC7BA90087237E /* Controller */,
+			);
+			path = manyImageView;
+			sourceTree = "<group>";
+		};
+		11B308DD22DC7B890087237E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11B308CE22DC7B4F0087237E /* oneImageViewController.h */,
+				11B308CF22DC7B4F0087237E /* oneImageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11B308DE22DC7B930087237E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11B308D122DC7B5F0087237E /* twoImageViewController.h */,
+				11B308D222DC7B5F0087237E /* twoImageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11B308DF22DC7B9D0087237E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11B308D422DC7B6C0087237E /* threeImageViewController.h */,
+				11B308D522DC7B6C0087237E /* threeImageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11B308E022DC7BA90087237E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11B308E822DC843A0087237E /* manyViewController.h */,
+				11B308E922DC843A0087237E /* manyViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11B308E122DC7BB00087237E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11B308DA22DC7B840087237E /* collectionViewController.h */,
+				11B308DB22DC7B840087237E /* collectionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11B308EB22DC846C0087237E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11B308EC22DC84850087237E /* CollectionViewCell.h */,
+				11B308ED22DC84850087237E /* CollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11B308EF22DC84C30087237E /* layout */ = {
+			isa = PBXGroup;
+			children = (
+				11B308F022DC84D10087237E /* XLCardSwitchFlowLayout.h */,
+				11B308F122DC84D10087237E /* XLCardSwitchFlowLayout.m */,
+			);
+			path = layout;
+			sourceTree = "<group>";
+		};
 		11D955BD21C8A18100ED5F63 /* tableView动态更新头部 */ = {
 			isa = PBXGroup;
 			children = (
@@ -762,6 +924,7 @@
 		11DA89C4213BA12000F57154 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				11B308F322DC8D620087237E /* imageData.plist */,
 				110B440E219C0CA90008B65C /* PrefixHeader.pch */,
 				119695BE213B9B60006035D4 /* Info.plist */,
 				119695BF213B9B60006035D4 /* main.m */,
@@ -960,6 +1123,7 @@
 				119695BA213B9B60006035D4 /* Assets.xcassets in Resources */,
 				1129161E214613D800B27CF0 /* YYMainTableViewCell.xib in Resources */,
 				11A095A321533E540065DE6F /* YYNestingSmallCell.xib in Resources */,
+				11B308F422DC8D620087237E /* imageData.plist in Resources */,
 				1105DFB2219D458300A81EA9 /* YYManyCell.xib in Resources */,
 				119DB60521902FE500441B3B /* YYTextFieldViewController.xib in Resources */,
 				11291626214615D800B27CF0 /* YYFootView.xib in Resources */,
@@ -1018,12 +1182,14 @@
 			files = (
 				119695B5213B9B5F006035D4 /* YYMainViewController.m in Sources */,
 				110B4415219C18F00008B65C /* YYLayoutModel.m in Sources */,
+				11B308EA22DC843A0087237E /* manyViewController.m in Sources */,
 				1163FA5D21476D3E00809A0D /* YYNoDataView.m in Sources */,
 				1105DFA7219D448300A81EA9 /* YYHeadTestView.m in Sources */,
 				11D955C621C8C7E700ED5F63 /* YYMathViewController.m in Sources */,
 				11A095A221533E540065DE6F /* YYNestingSmallCell.m in Sources */,
 				1146478021DF2B7200FE091B /* YYTestRuntimeModel.m in Sources */,
 				110B440C219C0B190008B65C /* YYLayoutCell.m in Sources */,
+				11B308F222DC84D10087237E /* XLCardSwitchFlowLayout.m in Sources */,
 				112F35E421B699A70005123F /* YYiCarouselViewController.m in Sources */,
 				1146478321DF2BA300FE091B /* YYTestPerson.m in Sources */,
 				110B4407219C0AD10008B65C /* YYTableViewLayoutController.m in Sources */,
@@ -1037,14 +1203,18 @@
 				112F35EC21B69A780005123F /* UIView+Extension.m in Sources */,
 				116541FB21887D7000327303 /* YYLabelViewController.m in Sources */,
 				119695C0213B9B60006035D4 /* main.m in Sources */,
+				11B308DC22DC7B840087237E /* collectionViewController.m in Sources */,
+				11B308D022DC7B4F0087237E /* oneImageViewController.m in Sources */,
 				112916172146122100B27CF0 /* YYCollectionViewController.m in Sources */,
 				119695B2213B9B5F006035D4 /* YYAppDelegate.m in Sources */,
 				116E51F721D5C50300B2E489 /* YYBeyondParentViewController.m in Sources */,
 				11A0959D21533D790065DE6F /* YYNestingCell.m in Sources */,
 				11FDAB5D21D1DAF800F8A035 /* YYRunTimeViewController.m in Sources */,
 				1105DF94219D3FBF00A81EA9 /* YYTableViewSectionSingleController.m in Sources */,
+				11B308EE22DC84850087237E /* CollectionViewCell.m in Sources */,
 				1129161D214613D800B27CF0 /* YYMainTableViewCell.m in Sources */,
 				1105DF97219D3FCF00A81EA9 /* YYTableViewSectionManyController.m in Sources */,
+				11B308D322DC7B5F0087237E /* twoImageViewController.m in Sources */,
 				11FDAB6121D1DB6400F8A035 /* Tool.m in Sources */,
 				112916142146120700B27CF0 /* YYTableViewController.m in Sources */,
 				1105DFB1219D458300A81EA9 /* YYManyCell.m in Sources */,
@@ -1053,8 +1223,10 @@
 				11A0959721533CF40065DE6F /* YYNestingTableViewController.m in Sources */,
 				11344D5621D3CDD9002566C0 /* Son.m in Sources */,
 				1105DFAB219D449400A81EA9 /* YYFootTestView.m in Sources */,
+				11B308D622DC7B6C0087237E /* threeImageViewController.m in Sources */,
 				1174A8C521D31ABB00BA98D7 /* YYArrayCopyViewController.m in Sources */,
 				116541F621887D1A00327303 /* YYLabel.m in Sources */,
+				11B308E722DC81AC0087237E /* YYScrollController.m in Sources */,
 				1125E10321B6D80900D0E529 /* UIViewController+BackButtonHandler.m in Sources */,
 				116541F22188797800327303 /* YYArraySortViewController.m in Sources */,
 				11D955C121C8A1FC00ED5F63 /* YYTableViewHeaderViewController.m in Sources */,
