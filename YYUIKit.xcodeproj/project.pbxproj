@@ -76,6 +76,7 @@
 		11B308F422DC8D620087237E /* imageData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11B308F322DC8D620087237E /* imageData.plist */; };
 		11B308F922DC91860087237E /* YYCollectionSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B308F822DC91860087237E /* YYCollectionSearchController.m */; };
 		11B308FD22DC91F00087237E /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B308FB22DC91EF0087237E /* MyCollectionViewCell.m */; };
+		11B3090122DC95200087237E /* scanQRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B3090022DC95200087237E /* scanQRCodeController.m */; };
 		11D955C121C8A1FC00ED5F63 /* YYTableViewHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D955C021C8A1FC00ED5F63 /* YYTableViewHeaderViewController.m */; };
 		11D955C621C8C7E700ED5F63 /* YYMathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D955C521C8C7E700ED5F63 /* YYMathViewController.m */; };
 		11F9B93121D61D6A00DB6178 /* HitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F9B93021D61D6A00DB6178 /* HitTestView.m */; };
@@ -227,6 +228,8 @@
 		11B308F822DC91860087237E /* YYCollectionSearchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYCollectionSearchController.m; sourceTree = "<group>"; };
 		11B308FB22DC91EF0087237E /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
 		11B308FC22DC91EF0087237E /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
+		11B308FF22DC95200087237E /* scanQRCodeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scanQRCodeController.h; sourceTree = "<group>"; };
+		11B3090022DC95200087237E /* scanQRCodeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = scanQRCodeController.m; sourceTree = "<group>"; };
 		11D955BF21C8A1FC00ED5F63 /* YYTableViewHeaderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTableViewHeaderViewController.h; sourceTree = "<group>"; };
 		11D955C021C8A1FC00ED5F63 /* YYTableViewHeaderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTableViewHeaderViewController.m; sourceTree = "<group>"; };
 		11D955C421C8C7E700ED5F63 /* YYMathViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYMathViewController.h; sourceTree = "<group>"; };
@@ -673,6 +676,7 @@
 				116E51F321D5C49900B2E489 /* 子View超出父类范围 */,
 				116A1AB2215CC8A0007238B8 /* UIDatePicker */,
 				112F35E121B699820005123F /* 轮播图 */,
+				11B308FE22DC94EC0087237E /* 二维码扫描 */,
 				11DA89C4213BA12000F57154 /* other */,
 			);
 			path = YYUIKit;
@@ -901,6 +905,23 @@
 				11B308FB22DC91EF0087237E /* MyCollectionViewCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		11B308FE22DC94EC0087237E /* 二维码扫描 */ = {
+			isa = PBXGroup;
+			children = (
+				11B3090222DC95280087237E /* Controller */,
+			);
+			path = "二维码扫描";
+			sourceTree = "<group>";
+		};
+		11B3090222DC95280087237E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11B308FF22DC95200087237E /* scanQRCodeController.h */,
+				11B3090022DC95200087237E /* scanQRCodeController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		11D955BD21C8A18100ED5F63 /* tableView动态更新头部 */ = {
@@ -1238,6 +1259,7 @@
 				116541FB21887D7000327303 /* YYLabelViewController.m in Sources */,
 				119695C0213B9B60006035D4 /* main.m in Sources */,
 				11B308DC22DC7B840087237E /* collectionViewController.m in Sources */,
+				11B3090122DC95200087237E /* scanQRCodeController.m in Sources */,
 				11B308D022DC7B4F0087237E /* oneImageViewController.m in Sources */,
 				112916172146122100B27CF0 /* YYCollectionViewController.m in Sources */,
 				119695B2213B9B5F006035D4 /* YYAppDelegate.m in Sources */,

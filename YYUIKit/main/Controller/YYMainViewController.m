@@ -116,7 +116,9 @@
                       @"数组拷贝",
                       @"子View超出父类范围",
                       @"UIDatePicker时间选择器",
-                      @"轮播图",nil];
+                      @"轮播图",
+                      @"二维码扫描",
+                      @"自定义按钮",nil];
     }
     return _dataSoure;
 }
@@ -142,7 +144,9 @@
                             @"YYArrayCopyViewController",
                             @"YYBeyondParentViewController",
                             @"YYDatePickerController",
-                            @"YYScrollController",nil];
+                            @"YYScrollController",
+                            @"scanQRCodeController",
+                            @"ViewController",nil];
     }
     return _controllerSoure;
 }
