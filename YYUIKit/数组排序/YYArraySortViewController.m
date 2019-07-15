@@ -19,12 +19,24 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor greenColor];
+
+    float total = 0.0;
+    if (total == 0)
+    {
+        NSLog(@"total是000000");
+    }
+    else
+    {
+        NSLog(@"NNNNNN");
+    }
+
+
     //升序
     //[self ascendingArray];
     //降序
     //[self descendingArray];
     //删除元素
-    [self deleteItemInArray];
+    //[self deleteItemInArray];
 }
 
 #pragma mark - 升序
