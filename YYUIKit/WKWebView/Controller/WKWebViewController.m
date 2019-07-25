@@ -24,9 +24,9 @@
     [self initView];
     [self deleteWebCache];
     //加载本地文件
-    [self loadLocalFile];
+    //[self loadLocalFile];
     //加载网络文件
-    //[self loadNetFile];
+    [self loadNetFile];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
