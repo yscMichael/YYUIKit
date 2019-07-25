@@ -121,7 +121,8 @@
                       @"二维码扫描",
                       @"自定义按钮",
                       @"镂空效果",
-                      @"WKWebView",nil];
+                      @"WKWebView",
+                      @"导航控制器",nil];
     }
     return _dataSoure;
 }
@@ -151,7 +152,8 @@
                             @"scanQRCodeController",
                             @"ViewController",
                             @"YYMaskViewController",
-                            @"WKWebViewController",nil];
+                            @"WKWebViewController",
+                            @"YYNavViewController",nil];
     }
     return _controllerSoure;
 }

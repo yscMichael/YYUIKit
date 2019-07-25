@@ -44,6 +44,7 @@
 		1146478321DF2BA300FE091B /* YYTestPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146478221DF2BA300FE091B /* YYTestPerson.m */; };
 		115B72DC22E9846700B8567D /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115B72DB22E9846700B8567D /* WKWebViewController.m */; };
 		115B72E222E986F700B8567D /* tip.html in Resources */ = {isa = PBXBuildFile; fileRef = 115B72E122E986F600B8567D /* tip.html */; };
+		115B72E722E98DCB00B8567D /* YYNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115B72E622E98DCB00B8567D /* YYNavViewController.m */; };
 		1163FA5D21476D3E00809A0D /* YYNoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1163FA5C21476D3E00809A0D /* YYNoDataView.m */; };
 		1163FA5F21476D4C00809A0D /* YYNoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1163FA5E21476D4C00809A0D /* YYNoDataView.xib */; };
 		116541F22188797800327303 /* YYArraySortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 116541F12188797800327303 /* YYArraySortViewController.m */; };
@@ -172,6 +173,8 @@
 		115B72DA22E9846700B8567D /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
 		115B72DB22E9846700B8567D /* WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
 		115B72E122E986F600B8567D /* tip.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tip.html; sourceTree = "<group>"; };
+		115B72E522E98DCB00B8567D /* YYNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYNavViewController.h; sourceTree = "<group>"; };
+		115B72E622E98DCB00B8567D /* YYNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYNavViewController.m; sourceTree = "<group>"; };
 		1163FA5B21476D3E00809A0D /* YYNoDataView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYNoDataView.h; sourceTree = "<group>"; };
 		1163FA5C21476D3E00809A0D /* YYNoDataView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYNoDataView.m; sourceTree = "<group>"; };
 		1163FA5E21476D4C00809A0D /* YYNoDataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYNoDataView.xib; sourceTree = "<group>"; };
@@ -585,6 +588,23 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		115B72E322E98D2B00B8567D /* 导航控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				115B72E422E98DA600B8567D /* Controller */,
+			);
+			path = "导航控制器";
+			sourceTree = "<group>";
+		};
+		115B72E422E98DA600B8567D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				115B72E522E98DCB00B8567D /* YYNavViewController.h */,
+				115B72E622E98DCB00B8567D /* YYNavViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		1163FA5A21476D2200809A0D /* NoDataView */ = {
 			isa = PBXGroup;
 			children = (
@@ -708,6 +728,7 @@
 				11B308FE22DC94EC0087237E /* 二维码扫描 */,
 				1197295122DDBA2C00D60A1B /* 镂空效果 */,
 				115B72D822E9843B00B8567D /* WKWebView */,
+				115B72E322E98D2B00B8567D /* 导航控制器 */,
 				11DA89C4213BA12000F57154 /* other */,
 			);
 			path = YYUIKit;
@@ -1344,6 +1365,7 @@
 				11B308D622DC7B6C0087237E /* threeImageViewController.m in Sources */,
 				1174A8C521D31ABB00BA98D7 /* YYArrayCopyViewController.m in Sources */,
 				11B308F922DC91860087237E /* YYCollectionSearchController.m in Sources */,
+				115B72E722E98DCB00B8567D /* YYNavViewController.m in Sources */,
 				116541F621887D1A00327303 /* YYLabel.m in Sources */,
 				11B308E722DC81AC0087237E /* YYScrollController.m in Sources */,
 				115B72DC22E9846700B8567D /* WKWebViewController.m in Sources */,
