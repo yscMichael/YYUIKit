@@ -42,6 +42,8 @@
 		11344D5621D3CDD9002566C0 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 11344D5521D3CDD9002566C0 /* Son.m */; };
 		1146478021DF2B7200FE091B /* YYTestRuntimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146477F21DF2B7200FE091B /* YYTestRuntimeModel.m */; };
 		1146478321DF2BA300FE091B /* YYTestPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146478221DF2BA300FE091B /* YYTestPerson.m */; };
+		115B72DC22E9846700B8567D /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115B72DB22E9846700B8567D /* WKWebViewController.m */; };
+		115B72E222E986F700B8567D /* tip.html in Resources */ = {isa = PBXBuildFile; fileRef = 115B72E122E986F600B8567D /* tip.html */; };
 		1163FA5D21476D3E00809A0D /* YYNoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1163FA5C21476D3E00809A0D /* YYNoDataView.m */; };
 		1163FA5F21476D4C00809A0D /* YYNoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1163FA5E21476D4C00809A0D /* YYNoDataView.xib */; };
 		116541F22188797800327303 /* YYArraySortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 116541F12188797800327303 /* YYArraySortViewController.m */; };
@@ -58,6 +60,8 @@
 		119695C0213B9B60006035D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 119695BF213B9B60006035D4 /* main.m */; };
 		119695CA213B9B61006035D4 /* YYUIKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 119695C9213B9B61006035D4 /* YYUIKitTests.m */; };
 		119695D5213B9B61006035D4 /* YYUIKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 119695D4213B9B61006035D4 /* YYUIKitUITests.m */; };
+		1197295522DDBA7A00D60A1B /* YYMaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1197295422DDBA7A00D60A1B /* YYMaskViewController.m */; };
+		1197295922DDBF9600D60A1B /* YYMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1197295822DDBF9600D60A1B /* YYMaskView.m */; };
 		119DB60421902FE500441B3B /* YYTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 119DB60221902FE500441B3B /* YYTextFieldViewController.m */; };
 		119DB60521902FE500441B3B /* YYTextFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 119DB60321902FE500441B3B /* YYTextFieldViewController.xib */; };
 		11A0959721533CF40065DE6F /* YYNestingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A0959621533CF40065DE6F /* YYNestingTableViewController.m */; };
@@ -165,6 +169,9 @@
 		1146477F21DF2B7200FE091B /* YYTestRuntimeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTestRuntimeModel.m; sourceTree = "<group>"; };
 		1146478121DF2BA300FE091B /* YYTestPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTestPerson.h; sourceTree = "<group>"; };
 		1146478221DF2BA300FE091B /* YYTestPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTestPerson.m; sourceTree = "<group>"; };
+		115B72DA22E9846700B8567D /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		115B72DB22E9846700B8567D /* WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		115B72E122E986F600B8567D /* tip.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tip.html; sourceTree = "<group>"; };
 		1163FA5B21476D3E00809A0D /* YYNoDataView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYNoDataView.h; sourceTree = "<group>"; };
 		1163FA5C21476D3E00809A0D /* YYNoDataView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYNoDataView.m; sourceTree = "<group>"; };
 		1163FA5E21476D4C00809A0D /* YYNoDataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYNoDataView.xib; sourceTree = "<group>"; };
@@ -196,6 +203,10 @@
 		119695D0213B9B61006035D4 /* YYUIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYUIKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		119695D4213B9B61006035D4 /* YYUIKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYUIKitUITests.m; sourceTree = "<group>"; };
 		119695D6213B9B61006035D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1197295322DDBA7A00D60A1B /* YYMaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYMaskViewController.h; sourceTree = "<group>"; };
+		1197295422DDBA7A00D60A1B /* YYMaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYMaskViewController.m; sourceTree = "<group>"; };
+		1197295722DDBF9600D60A1B /* YYMaskView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYMaskView.h; sourceTree = "<group>"; };
+		1197295822DDBF9600D60A1B /* YYMaskView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYMaskView.m; sourceTree = "<group>"; };
 		119DB60121902FE500441B3B /* YYTextFieldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTextFieldViewController.h; sourceTree = "<group>"; };
 		119DB60221902FE500441B3B /* YYTextFieldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTextFieldViewController.m; sourceTree = "<group>"; };
 		119DB60321902FE500441B3B /* YYTextFieldViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYTextFieldViewController.xib; sourceTree = "<group>"; };
@@ -556,6 +567,24 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		115B72D822E9843B00B8567D /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				115B72E122E986F600B8567D /* tip.html */,
+				115B72D922E9844E00B8567D /* Controller */,
+			);
+			path = WKWebView;
+			sourceTree = "<group>";
+		};
+		115B72D922E9844E00B8567D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				115B72DA22E9846700B8567D /* WKWebViewController.h */,
+				115B72DB22E9846700B8567D /* WKWebViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		1163FA5A21476D2200809A0D /* NoDataView */ = {
 			isa = PBXGroup;
 			children = (
@@ -677,6 +706,8 @@
 				116A1AB2215CC8A0007238B8 /* UIDatePicker */,
 				112F35E121B699820005123F /* 轮播图 */,
 				11B308FE22DC94EC0087237E /* 二维码扫描 */,
+				1197295122DDBA2C00D60A1B /* 镂空效果 */,
+				115B72D822E9843B00B8567D /* WKWebView */,
 				11DA89C4213BA12000F57154 /* other */,
 			);
 			path = YYUIKit;
@@ -698,6 +729,33 @@
 				119695D6213B9B61006035D4 /* Info.plist */,
 			);
 			path = YYUIKitUITests;
+			sourceTree = "<group>";
+		};
+		1197295122DDBA2C00D60A1B /* 镂空效果 */ = {
+			isa = PBXGroup;
+			children = (
+				1197295622DDBF3F00D60A1B /* YYMaskView */,
+				1197295222DDBA6100D60A1B /* Controller */,
+			);
+			path = "镂空效果";
+			sourceTree = "<group>";
+		};
+		1197295222DDBA6100D60A1B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1197295322DDBA7A00D60A1B /* YYMaskViewController.h */,
+				1197295422DDBA7A00D60A1B /* YYMaskViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1197295622DDBF3F00D60A1B /* YYMaskView */ = {
+			isa = PBXGroup;
+			children = (
+				1197295722DDBF9600D60A1B /* YYMaskView.h */,
+				1197295822DDBF9600D60A1B /* YYMaskView.m */,
+			);
+			path = YYMaskView;
 			sourceTree = "<group>";
 		};
 		119DB5FF21902FB700441B3B /* UITextField */ = {
@@ -1188,6 +1246,7 @@
 				1105DFA6219D448300A81EA9 /* YYHeadTestView.xib in Resources */,
 				110B440D219C0B190008B65C /* YYLayoutCell.xib in Resources */,
 				11A0959E21533D790065DE6F /* YYNestingCell.xib in Resources */,
+				115B72E222E986F700B8567D /* tip.html in Resources */,
 				112916382146512400B27CF0 /* YYCollectionViewCell.xib in Resources */,
 				1125E0FD21B6CCD200D0E529 /* YYScrollView.xib in Resources */,
 			);
@@ -1240,6 +1299,7 @@
 				11B308EA22DC843A0087237E /* manyViewController.m in Sources */,
 				1163FA5D21476D3E00809A0D /* YYNoDataView.m in Sources */,
 				1105DFA7219D448300A81EA9 /* YYHeadTestView.m in Sources */,
+				1197295522DDBA7A00D60A1B /* YYMaskViewController.m in Sources */,
 				11D955C621C8C7E700ED5F63 /* YYMathViewController.m in Sources */,
 				11A095A221533E540065DE6F /* YYNestingSmallCell.m in Sources */,
 				1146478021DF2B7200FE091B /* YYTestRuntimeModel.m in Sources */,
@@ -1280,11 +1340,13 @@
 				11A0959721533CF40065DE6F /* YYNestingTableViewController.m in Sources */,
 				11344D5621D3CDD9002566C0 /* Son.m in Sources */,
 				1105DFAB219D449400A81EA9 /* YYFootTestView.m in Sources */,
+				1197295922DDBF9600D60A1B /* YYMaskView.m in Sources */,
 				11B308D622DC7B6C0087237E /* threeImageViewController.m in Sources */,
 				1174A8C521D31ABB00BA98D7 /* YYArrayCopyViewController.m in Sources */,
 				11B308F922DC91860087237E /* YYCollectionSearchController.m in Sources */,
 				116541F621887D1A00327303 /* YYLabel.m in Sources */,
 				11B308E722DC81AC0087237E /* YYScrollController.m in Sources */,
+				115B72DC22E9846700B8567D /* WKWebViewController.m in Sources */,
 				1125E10321B6D80900D0E529 /* UIViewController+BackButtonHandler.m in Sources */,
 				116541F22188797800327303 /* YYArraySortViewController.m in Sources */,
 				11D955C121C8A1FC00ED5F63 /* YYTableViewHeaderViewController.m in Sources */,

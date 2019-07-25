@@ -8,6 +8,7 @@
 
 #import "YYMainViewController.h"
 #import "YYMainTableViewCell.h"
+#import "WKWebViewController.h"
 #import "YYArraySortViewController.h"
 
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
@@ -118,7 +119,9 @@
                       @"UIDatePicker时间选择器",
                       @"轮播图",
                       @"二维码扫描",
-                      @"自定义按钮",nil];
+                      @"自定义按钮",
+                      @"镂空效果",
+                      @"WKWebView",nil];
     }
     return _dataSoure;
 }
@@ -146,7 +149,9 @@
                             @"YYDatePickerController",
                             @"YYScrollController",
                             @"scanQRCodeController",
-                            @"ViewController",nil];
+                            @"ViewController",
+                            @"YYMaskViewController",
+                            @"WKWebViewController",nil];
     }
     return _controllerSoure;
 }
